@@ -1,0 +1,34 @@
+$blackFont: 'NotoSansBlack', '맑은 고딕', sans-serif;
+$boldFont: 'NotoSansB', '맑은 고딕', sans-serif;
+$middleFont: 'NotoSansM', '맑은 고딕', sans-serif;
+$regularFont: 'NotoSansR', '맑은 고딕', sans-serif;
+$thinFont: 'NotoSansT', '맑은 고딕', sans-serif;
+
+@mixin position-style(
+  $position: absolute,
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null,
+  $zIndex: null
+) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: $zIndex;
+}
+
+@mixin flex-style(
+  $flexDirection: row,
+  $alignVal: center,
+  $justifyVal: center,
+  $flexWrap: null,
+  $flex: null
+) {
+  display: flex;
+  flex-direction: $flexDirection;
+  align-items: $alignVal;
+  justify-content: $justifyVal;
+}

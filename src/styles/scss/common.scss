@@ -1,0 +1,34 @@
+@import './style';
+
+.column {
+  @include flex-style(column);
+}
+
+.row {
+  @include flex-style();
+}
+
+.App {
+  height: 500vh;
+  .nav {
+    opacity: 0;
+      transition: 0.3s;
+      background-color: black;
+    width: 100%;
+    height: 70px;
+    @include position-style(fixed);
+    &.active {
+      opacity: 1;
+      transition: 0.3s;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  img {
+    overflow: hidden;
+    width: 100%;
+  }
+}
