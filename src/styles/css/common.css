@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes moving {
   0% {
     transform: translateY(5px);
@@ -34,10 +35,7 @@
   justify-content: center;
 }
 
-.App {
-  height: 500vh;
-}
-.App .nav {
+.nav {
   opacity: 0;
   transition: 0.3s;
   background-color: black;
@@ -46,45 +44,62 @@
   position: fixed;
   top: 0;
 }
-.App .nav.active {
+.nav.active {
   opacity: 1;
   transition: 0.3s;
 }
 
-.container {
-  width: 100%;
-  min-height: 200vh;
+img {
+  cursor: pointer;
 }
-.container .first {
+
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
-.container .first .mainImg {
+.container.main .mainImg {
   width: 100%;
   height: 100vh;
   object-fit: cover;
   object-position: 50% 33%;
 }
-.container .first .mainLogo {
+.container.main .mainLogo {
   position: absolute;
   top: 100px;
   right: 100px;
   width: 15rem;
   animation: rightMoving 1.5s infinite;
 }
-.container .first .sign {
+.container.main .sign {
   width: 500px;
   position: absolute;
   top: 500px;
   right: 100px;
 }
-.container .first .scroll-down-icon {
+.container.main .scroll-down-icon {
   position: absolute;
   top: calc(100vh - 60px);
   opacity: 1;
   animation: moving 1.5s infinite;
+}
+.container.intro {
+  background-color: black;
+}
+.container.intro .title {
+  font-size: 50px;
+  font-family: "NotoSansB", "맑은 고딕", sans-serif;
+  margin-bottom: 30px;
+}
+.container.intro .swiper {
+  width: 100%;
+}
+.container.intro .swiper .swiper-button-prev {
+  left: calc(50% - 800px);
+}
+.container.intro .swiper .swiper-button-next {
+  left: calc(50% + 800px);
 }

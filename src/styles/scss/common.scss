@@ -8,29 +8,27 @@
   @include flex-style();
 }
 
-.App {
-  height: 500vh;
-  .nav {
-    opacity: 0;
+.nav {
+  opacity: 0;
+  transition: 0.3s;
+  background-color: black;
+  width: 100%;
+  height: 70px;
+  @include position-style(fixed, 0);
+  &.active {
+    opacity: 1;
     transition: 0.3s;
-    background-color: black;
-    width: 100%;
-    height: 70px;
-    @include position-style(fixed, 0);
-    &.active {
-      opacity: 1;
-      transition: 0.3s;
-    }
   }
+}
+img {
+  cursor: pointer;
 }
 
 .container {
+  @include flex-style(column);
   width: 100%;
-  min-height: 200vh;
-  .first {
-    @include flex-style(column);
-    width: 100%;
-    height: 100vh;
+  min-height: 100vh;
+  &.main {
     .mainImg {
       width: 100%;
       height: 100vh;
@@ -51,6 +49,23 @@
       top: calc(100vh - 60px);
       opacity: 1;
       animation: moving 1.5s infinite;
+    }
+  }
+  &.intro {
+    background-color: black;
+    .title {
+      font-size: 50px;
+      font-family: $boldFont;
+      margin-bottom: 30px;
+    }
+    .swiper {
+      width: 100%;
+      .swiper-button-prev {
+        left: calc(50% - 800px);
+      }
+      .swiper-button-next {
+        left: calc(50% + 800px);
+      }
     }
   }
 }

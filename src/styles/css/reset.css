@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: 'NotoSansR', '맑은 고딕', sans-serif;
   font-weight: normal;
+  color: white;
 
   ::-webkit-scrollbar {
     width: 8px;
