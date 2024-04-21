@@ -1,3 +1,25 @@
+@keyframes moving {
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+@keyframes rightMoving {
+  0% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
 .column {
   display: flex;
   flex-direction: column;
@@ -22,6 +44,7 @@
   width: 100%;
   height: 70px;
   position: fixed;
+  top: 0;
 }
 .App .nav.active {
   opacity: 1;
@@ -30,9 +53,38 @@
 
 .container {
   width: 100%;
-  min-height: 100vh;
+  min-height: 200vh;
 }
-.container img {
-  overflow: hidden;
+.container .first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  height: 100vh;
+}
+.container .first .mainImg {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 50% 33%;
+}
+.container .first .mainLogo {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  width: 15rem;
+  animation: rightMoving 1.5s infinite;
+}
+.container .first .sign {
+  width: 500px;
+  position: absolute;
+  top: 500px;
+  right: 100px;
+}
+.container .first .scroll-down-icon {
+  position: absolute;
+  top: calc(100vh - 60px);
+  opacity: 1;
+  animation: moving 1.5s infinite;
 }

@@ -32,3 +32,27 @@ $thinFont: 'NotoSansT', '맑은 고딕', sans-serif;
   align-items: $alignVal;
   justify-content: $justifyVal;
 }
+
+@keyframes moving {
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes rightMoving {
+  0% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
