@@ -4,6 +4,37 @@ $middleFont: 'NotoSansM', '맑은 고딕', sans-serif;
 $regularFont: 'NotoSansR', '맑은 고딕', sans-serif;
 $thinFont: 'NotoSansT', '맑은 고딕', sans-serif;
 
+//= 분기점
+$breakpoint-desktop: 1440px; //데스크톱
+$breakpoint-wide-tablet: 1180px; //태블릿 가로
+$breakpoint-tablet: 820px; //태블릿 세로
+$breakpoint-mobile: 480px; //모바일
+
+//& 데스크톱
+@mixin desktop {
+  @media screen and (max-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+//& 태블릿 가로
+@mixin wide-tablet {
+  @media screen and (max-width: $breakpoint-wide-tablet) {
+    @content;
+  }
+}
+//& 태블릿 세로
+@mixin tablet {
+  @media screen and (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+//& 모바일
+@mixin mobile {
+  @media screen and (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
 @mixin position-style(
   $position: absolute,
   $top: null,
@@ -33,6 +64,8 @@ $thinFont: 'NotoSansT', '맑은 고딕', sans-serif;
   justify-content: $justifyVal;
 }
 
+//= animation
+
 @keyframes moving {
   0% {
     transform: translateY(5px);
@@ -54,5 +87,16 @@ $thinFont: 'NotoSansT', '맑은 고딕', sans-serif;
   }
   100% {
     transform: translateX(5px);
+  }
+}
+
+@keyframes txtUpAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

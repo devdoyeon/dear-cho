@@ -30,6 +30,7 @@ img {
   min-height: 100vh;
   &.main {
     .mainImg {
+      cursor: default;
       width: 100%;
       height: 100vh;
       object-fit: cover;
@@ -37,7 +38,7 @@ img {
     }
     .mainLogo {
       @include position-style($top: 100px, $right: 100px);
-      width: 15rem;
+      width: 250px;
       animation: rightMoving 1.5s infinite;
     }
     .sign {
@@ -50,13 +51,82 @@ img {
       opacity: 1;
       animation: moving 1.5s infinite;
     }
+    @include mobile {
+      .mainLogo {
+        width: 200px;
+        top: 50px;
+        right: 20px;
+      }
+      .sign {
+        width: 200px;
+      }
+      .scroll-down-icon {
+        scale: 0.7;
+      }
+    }
   }
   &.intro {
+    padding: 100px;
     background-color: black;
     .title {
-      font-size: 50px;
+      font-size: 40px;
       font-family: $boldFont;
       margin-bottom: 30px;
+    }
+    .info-box {
+      margin: 30px 0 130px;
+      align-items: flex-start;
+      @for $i from 0 through 6 {
+        .row:nth-child(#{$i}) {
+          animation: txtUpAnimation 1s ease-in-out;
+          animation-fill-mode: forwards;
+          animation-delay: $i * 0.4s;
+        }
+      }
+      .row {
+        margin: 10px 0;
+        opacity: 0;
+        width: 100%;
+        justify-content: space-between;
+        span {
+          margin-right: 20px;
+          font-family: $thinFont;
+          font-size: 30px;
+          transition: all 0.2s;
+        }
+        h4 {
+          font-size: 50px;
+          font-family: $boldFont;
+          transition: all 0.2s;
+        }
+        @include wide-tablet {
+          margin: 4px 0;
+          span {
+            font-size: 20px;
+          }
+          h4 {
+            font-size: 35px;
+          }
+        }
+        @include tablet {
+          span {
+            font-size: 10px;
+          }
+          h4 {
+            font-size: 16px;
+          }
+        }
+        &:hover {
+          transition: all 0.2s;
+          cursor: pointer;
+          span {
+            color: rgb(107, 107, 253);
+          }
+          h4 {
+            color: rgb(107, 107, 253);
+          }
+        }
+      }
     }
     .swiper {
       width: 100%;
