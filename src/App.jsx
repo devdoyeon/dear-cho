@@ -5,6 +5,7 @@ import AlbumPage from "pages/AlbumPage";
 import Navigator from "components/Navigator";
 import "./App.css";
 import "styles/scss/common.scss";
+import UnknownPage from "./pages/UnknownPage";
 
 function App() {
   const [toggle, setToggle] = useState(false);
@@ -35,6 +36,7 @@ function App() {
       {<MainPage />}
       {<IntroducePage scrollY={scrollY} />}
       {<AlbumPage scrollY={scrollY} />}
+      {<UnknownPage scrollY={scrollY} />}
     </div>
   );
 }

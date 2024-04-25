@@ -1,6 +1,12 @@
 import albumInfo from "data/albumInfo.json";
+import { useEffect } from "react";
 
-const AlbumModal = ({ imgInfo, setModalToggle }) => {
+const AlbumModal = ({ imgInfo, modalToggle, setModalToggle }) => {
+  useEffect(() => {
+    if (modalToggle) document.body.style.overflow = "hidden";
+    return () => document.body.style.overflow = "auto";
+  }, [modalToggle]);
+
   const albumDetail =
     albumInfo.information[
       imgInfo?.idx < 10 ? `0${imgInfo?.idx}` : imgInfo?.idx

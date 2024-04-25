@@ -66,41 +66,48 @@ const AlbumPage = ({ scrollY }) => {
   }, [scrollY]);
 
   return (
-    <div className="container albumPage">
-      <h2 className="title album-title odd">ALBUM</h2>
-      <img src={albumBg} alt="앨범 배경이미지" className="pageImg" />
-      <div className="column album-wrap">
-        <span className="click-guide">CLICK ME!</span>
-        <div className="row album-list">{renderAlbumList()}</div>
-        <div className="row scroll-wrap">
-          <button
-            className="scroll-btn prev"
-            onClick={() =>
-              document.querySelector(".album-list").scrollBy({
-                left: -(window.innerWidth / 2),
-                behavior: "smooth",
-              })
-            }
-          >
-            &#60;
-          </button>
-          <button
-            className="scroll-btn next"
-            onClick={() =>
-              document.querySelector(".album-list").scrollBy({
-                left: window.innerWidth / 2,
-                behavior: "smooth",
-              })
-            }
-          >
-            &#62;
-          </button>
+    <>
+      {" "}
+      <div className="container albumPage">
+        <h2 className="title album-title odd">ALBUM</h2>
+        <img src={albumBg} alt="앨범 배경이미지" className="pageImg" />
+        <div className="column album-wrap">
+          <span className="click-guide">CLICK ME!</span>
+          <div className="row album-list">{renderAlbumList()}</div>
+          <div className="row scroll-wrap">
+            <button
+              className="scroll-btn prev"
+              onClick={() =>
+                document.querySelector(".album-list").scrollBy({
+                  left: -(window.innerWidth / 2),
+                  behavior: "smooth",
+                })
+              }
+            >
+              &#60;
+            </button>
+            <button
+              className="scroll-btn next"
+              onClick={() =>
+                document.querySelector(".album-list").scrollBy({
+                  left: window.innerWidth / 2,
+                  behavior: "smooth",
+                })
+              }
+            >
+              &#62;
+            </button>
+          </div>
         </div>
       </div>
       {modalToggle && (
-        <AlbumModal imgInfo={imgInfo} setModalToggle={setModalToggle} />
+        <AlbumModal
+          imgInfo={imgInfo}
+          modalToggle={modalToggle}
+          setModalToggle={setModalToggle}
+        />
       )}
-    </div>
+    </>
   );
 };
 
