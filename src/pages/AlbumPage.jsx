@@ -1,5 +1,7 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import $ from "jquery";
+
+import AlbumModal from "components/AlbumModal";
 import albumBg from "images/albumBg.jpg";
 import album00 from "images/albumCover/0.jpg";
 import album01 from "images/albumCover/1.jpg";
@@ -13,9 +15,11 @@ import album08 from "images/albumCover/8.jpg";
 import album09 from "images/albumCover/9.jpg";
 import album10 from "images/albumCover/10.jpg";
 import album11 from "images/albumCover/11.jpg";
-import albumInfo from "data/albumInfo.json";
 
 const AlbumPage = ({ scrollY }) => {
+  const [modalToggle, setModalToggle] = useState(false);
+  const [imgInfo, setImgInfo] = useState({ img: "", idx: "" });
+
   const albumArr = [
     album00,
     album01,
@@ -35,7 +39,20 @@ const AlbumPage = ({ scrollY }) => {
     return albumArr.map((albumCover, idx) => {
       return (
         <>
-          <img src={albumCover} alt={idx} className="album-cover" />
+          <img
+            src={albumCover}
+            alt={idx}
+            className="album-cover"
+            onClick={() => {
+              setImgInfo((prev) => {
+                const clone = { ...prev };
+                clone.img = albumCover;
+                clone.idx = idx;
+                return clone;
+              });
+              setModalToggle(true);
+            }}
+          />
         </>
       );
     });
@@ -80,6 +97,9 @@ const AlbumPage = ({ scrollY }) => {
           </button>
         </div>
       </div>
+      {modalToggle && (
+        <AlbumModal imgInfo={imgInfo} setModalToggle={setModalToggle} />
+      )}
     </div>
   );
 };

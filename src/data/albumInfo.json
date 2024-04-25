@@ -1,6 +1,8 @@
 {
-  "albumInfo": {
+  "information": {
     "00": {
+      "albumType": "1st Single Album",
+      "albumName": "DEAR.",
       "release": "2020/05/08",
       "tracklist": [
         {
@@ -13,13 +15,15 @@
         {
           "lead": true,
           "title": "개화",
-          "lyrics": "",
+          "lyrics": "조원상, 최상엽",
           "compose": "조원상, O.YEON",
           "arrange": "조원상, 신예찬, 최상엽, 신광일, O.YEON"
         }
       ]
     },
     "01": {
+      "albumType": "1st Mini Album",
+      "albumName": "PANORAMA",
       "release": "2020/08/13",
       "tracklist": [
         {
@@ -67,6 +71,8 @@
       ]
     },
     "02": {
+      "albumType": "2nd Single Album",
+      "albumName": "선잠",
       "release": "2020/11/12",
       "tracklist": [
         {
@@ -86,6 +92,8 @@
       ]
     },
     "03": {
+      "albumType": "3rd Single Album",
+      "albumName": "INSIDE",
       "release": "2021/02/16",
       "tracklist": [
         {
@@ -112,6 +120,8 @@
       ]
     },
     "04": {
+      "albumType": "4th Single Album",
+      "albumName": "Gatcha!",
       "release": "2021/06/16",
       "tracklist": [
         {
@@ -145,6 +155,8 @@
       ]
     },
     "05": {
+      "albumType": "Digital Single Album",
+      "albumName": "동문서답",
       "release": "2021/08/20",
       "tracklist": [
         {
@@ -164,6 +176,8 @@
       ]
     },
     "06": {
+      "albumType": "2nd Mini Album",
+      "albumName": "BLUE",
       "release": "2021/12/07",
       "tracklist": [
         {
@@ -211,6 +225,8 @@
       ]
     },
     "07": {
+      "albumType": "1st Studio Album",
+      "albumName": "Childhood",
       "release": "2022/08/17",
       "tracklist": [
         {
@@ -321,6 +337,8 @@
       ]
     },
     "08": {
+      "albumType": "3rd Mini Album",
+      "albumName": "INSERT COIN",
       "release": "2023/02/23",
       "tracklist": [
         {
@@ -368,6 +386,8 @@
       ]
     },
     "09": {
+      "albumType": "4th Mini Album",
+      "albumName": "열",
       "release": "2023/08/17",
       "tracklist": [
         {
@@ -401,6 +421,8 @@
       ]
     },
     "10": {
+      "albumType": "6th Single Album",
+      "albumName": "Boogie Man",
       "release": "2023/12/05",
       "tracklist": [
         {
@@ -420,6 +442,8 @@
       ]
     },
     "11": {
+      "albumType": "7th Single Album",
+      "albumName": "못 죽는 기사와 비단 요람",
       "release": "2024/03/20",
       "tracklist": [
         {

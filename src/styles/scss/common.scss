@@ -14,7 +14,7 @@
   background-color: black;
   width: 100%;
   height: 70px;
-  z-index: 10;
+  z-index: 3;
   @include position-style(fixed, 0);
   &.active {
     opacity: 1;
@@ -141,6 +141,103 @@
         }
       }
     }
+    .album-modal-bg {
+      @include flex-style();
+      position: fixed;
+      z-index: 4;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      .album-modal {
+        @include flex-style(column);
+        opacity: 1;
+        position: relative;
+        .album-modal-cover {
+          width: 40%;
+          border-radius: 10px;
+        }
+        .album-modal-content {
+          @include flex-style(column, center, flex-start);
+          overflow: auto;
+          width: 40%;
+          height: 100%;
+          position: absolute;
+          background-color: rgba(0, 0, 0, 0.7);
+          z-index: 5;
+          border: 2px solid white;
+          border-radius: 10px;
+          .closeBtn {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            font-family: $blackFont;
+            padding: 5px 10px;
+            font-size: 20px;
+            border-radius: 20%;
+            border: 2px solid white;
+          }
+          .album-type {
+            margin-top: 50px;
+            font-size: 13px;
+          }
+          .album-name {
+            font-family: $blackFont;
+            font-style: italic;
+            margin-bottom: 5px;
+          }
+          .released-date {
+            font-family: $thinFont;
+            font-size: 13px;
+            margin-bottom: 30px;
+          }
+          .song-list {
+            padding-bottom: 50px;
+            .song {
+              width: 100%;
+              span {
+                &.lead {
+                  font-family: $boldFont;
+                  font-size: 10px;
+                  background-color: white;
+                  color: black;
+                  padding: 3px 5px;
+                  border-radius: 30%;
+                  margin-right: 10px;
+                }
+                &.song-title {
+                  display: inline-block;
+                  margin-bottom: 10px;
+                  font-family: $boldFont;
+                }
+                &.lead-song {
+                  text-decoration: underline;
+                }
+                b {
+                  font-family: $boldFont;
+                  font-size: 12px;
+                  font-style: italic;
+                }
+              }
+              hr {
+                width: 100%;
+                height: 1px;
+                margin: 10px 0;
+                border: 0;
+                background-color: white;
+
+              }
+              &:last-child {
+                hr {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   .animate {
@@ -173,6 +270,30 @@
         .scroll-wrap {
           .scroll-btn {
             font-size: 30px;
+          }
+        }
+      }
+      .album-modal-bg {
+        .album-modal {
+          .album-modal-cover {
+            width: 60%;
+          }
+          .album-modal-content {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+  @include tablet {
+    &.albumPage {
+      .album-modal-bg {
+        .album-modal {
+          .album-modal-cover {
+            width: 80%;
+          }
+          .album-modal-content {
+            width: 80%;
           }
         }
       }
@@ -233,6 +354,29 @@
         .scroll-wrap {
           .scroll-btn {
             font-size: 20px;
+          }
+        }
+      }
+      .album-modal-bg {
+        .album-modal {
+          .album-modal-cover {
+            width: 90%;
+          }
+          .album-modal-content {
+            width: 90%;
+            .released-date {
+              font-size: 15px;
+            }
+            .song-list {
+              .song {
+                span {
+                  font-size: 10px;
+                  b {
+                    font-size: 8px;
+                  }
+                }
+              }
+            }
           }
         }
       }
