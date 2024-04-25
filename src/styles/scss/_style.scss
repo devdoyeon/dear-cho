@@ -5,17 +5,10 @@ $regularFont: 'NotoSansR', '맑은 고딕', sans-serif;
 $thinFont: 'NotoSansT', '맑은 고딕', sans-serif;
 
 //= 분기점
-$breakpoint-desktop: 1440px; //데스크톱
-$breakpoint-wide-tablet: 1180px; //태블릿 가로
+$breakpoint-wide-tablet: 1300px; //태블릿 가로
 $breakpoint-tablet: 820px; //태블릿 세로
 $breakpoint-mobile: 480px; //모바일
 
-//& 데스크톱
-@mixin desktop {
-  @media screen and (max-width: $breakpoint-desktop) {
-    @content;
-  }
-}
 //& 태블릿 가로
 @mixin wide-tablet {
   @media screen and (max-width: $breakpoint-wide-tablet) {

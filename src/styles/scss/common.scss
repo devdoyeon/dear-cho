@@ -1,4 +1,4 @@
-@import './style';
+@import "./style";
 
 .column {
   @include flex-style(column);
@@ -14,28 +14,48 @@
   background-color: black;
   width: 100%;
   height: 70px;
+  z-index: 10;
   @include position-style(fixed, 0);
   &.active {
     opacity: 1;
     transition: 0.3s;
   }
-}
-img {
-  cursor: pointer;
+  img {
+    cursor: pointer;
+  }
 }
 
 .container {
   @include flex-style(column);
+  position: relative;
   width: 100%;
-  min-height: 100vh;
-  &.main {
-    .mainImg {
-      cursor: default;
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
-      object-position: 50% 33%;
+  min-height: calc(100vh - 70px);
+  background-color: black;
+  .pageImg {
+    opacity: 0.4;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 70px);
+    object-fit: cover;
+    object-position: 50% 33%;
+    z-index: 0;
+  }
+  .title {
+    position: absolute;
+    top: 100px;
+    font-family: $blackFont;
+    font-style: italic;
+    font-size: 80px;
+    opacity: 0;
+    &.even {
+      left: 100px;
     }
+    &.odd {
+      right: 100px;
+    }
+  }
+  &.main {
+    min-height: 100vh;
     .mainLogo {
       @include position-style($top: 100px, $right: 100px);
       width: 250px;
@@ -51,7 +71,127 @@ img {
       opacity: 1;
       animation: moving 1.5s infinite;
     }
-    @include mobile {
+    .mainImg {
+      height: 100vh;
+      opacity: 1;
+    }
+  }
+  &.introducePage {
+    .info-box {
+      position: absolute;
+      bottom: 100px;
+      right: 100px;
+      opacity: 0;
+      .row {
+        span {
+          font-size: 20px;
+          margin-right: 10px;
+          transform: translateY(7px);
+        }
+        h4 {
+          font-size: 60px;
+          font-style: italic;
+          font-family: $boldFont;
+          margin: 3px 0;
+        }
+      }
+    }
+  }
+  &.albumPage {
+    .album-wrap {
+      position: absolute;
+      bottom: 100px;
+      overflow: hidden;
+      width: 80%;
+      opacity: 0;
+      .click-guide {
+        font-family: $blackFont;
+        color: rgba(0, 0, 0, 0);
+        -webkit-text-stroke: 1px white;
+        margin-bottom: 20px;
+        font-size: 40px;
+        animation: moving 1.5s infinite;
+      }
+      .album-list {
+        overflow: auto;
+        width: 100%;
+        justify-content: flex-start;
+        ::-webkit-scrollbar {
+          display: none;
+        }
+        scrollbar-width: none;
+        .album-cover {
+          width: 200px;
+          margin-right: 50px;
+          cursor: pointer;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      .scroll-wrap {
+        width: 100%;
+        margin-top: 20px;
+        .scroll-btn {
+          padding: 0 60px;
+          font-family: $blackFont;
+          font-size: 40px;
+          color: rgba(0, 0, 0, 0);
+          -webkit-text-stroke: 1px white;
+        }
+      }
+    }
+  }
+
+  .animate {
+    animation: txtUpAnimation 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  @include wide-tablet {
+    .title {
+      font-size: 50px;
+    }
+    &.introducePage {
+      .info-box {
+        .row {
+          h4 {
+            font-size: 40px;
+          }
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    &.albumPage {
+      .album-wrap {
+        bottom: 50px;
+        .click-guide {
+          font-size: 30px;
+        }
+        .scroll-wrap {
+          .scroll-btn {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  @include mobile {
+    .title {
+      font-size: 30px;
+      &.even {
+        top: 50px;
+        left: 50px;
+      }
+      &.odd {
+        top: 50px;
+        right: 50px;
+      }
+    }
+    &.main {
       .mainLogo {
         width: 200px;
         top: 50px;
@@ -64,77 +204,37 @@ img {
         scale: 0.7;
       }
     }
-  }
-  &.intro {
-    padding: 100px;
-    background-color: black;
-    .title {
-      font-size: 40px;
-      font-family: $boldFont;
-      margin-bottom: 30px;
-    }
-    .info-box {
-      margin: 30px 0 130px;
-      align-items: flex-start;
-      @for $i from 0 through 6 {
-        .row:nth-child(#{$i}) {
-          animation: txtUpAnimation 1s ease-in-out;
-          animation-fill-mode: forwards;
-          animation-delay: $i * 0.4s;
-        }
-      }
-      .row {
-        margin: 10px 0;
-        opacity: 0;
-        width: 100%;
-        justify-content: space-between;
-        span {
-          margin-right: 20px;
-          font-family: $thinFont;
-          font-size: 30px;
-          transition: all 0.2s;
-        }
-        h4 {
-          font-size: 50px;
-          font-family: $boldFont;
-          transition: all 0.2s;
-        }
-        @include wide-tablet {
-          margin: 4px 0;
+    &.introducePage {
+      .info-box {
+        bottom: 50px;
+        right: 50px;
+        .row {
           span {
+            font-size: 8px;
+          }
+          h4 {
             font-size: 20px;
           }
-          h4 {
-            font-size: 35px;
-          }
-        }
-        @include tablet {
-          span {
-            font-size: 10px;
-          }
-          h4 {
-            font-size: 16px;
-          }
-        }
-        &:hover {
-          transition: all 0.2s;
-          cursor: pointer;
-          span {
-            color: rgb(107, 107, 253);
-          }
-          h4 {
-            color: rgb(107, 107, 253);
-          }
         }
       }
     }
-    .swiper {
-      width: 100%;
-      .swiper-button-prev {
-        left: calc(50% - 800px);
-      }
-      .swiper-button-next {
-        left: calc(50% + 800px);
+    &.albumPage {
+      .album-wrap {
+        bottom: 30px;
+        .click-guide {
+          font-size: 20px;
+        }
+        .album-list {
+          .album-cover {
+            width: 150px;
+            margin-right: 20px;
+          }
+        }
+        .scroll-wrap {
+          .scroll-btn {
+            font-size: 20px;
+          }
+        }
       }
     }
   }

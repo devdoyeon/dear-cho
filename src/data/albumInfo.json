@@ -1,0 +1,442 @@
+{
+  "albumInfo": {
+    "00": {
+      "release": "2020/05/08",
+      "tracklist": [
+        {
+          "lead": false,
+          "title": "INTRO",
+          "lyrics": "",
+          "compose": "조원상, O.YEON",
+          "arrange": "조원상, 신예찬, 최상엽, 신광일, O.YEON"
+        },
+        {
+          "lead": true,
+          "title": "개화",
+          "lyrics": "",
+          "compose": "조원상, O.YEON",
+          "arrange": "조원상, 신예찬, 최상엽, 신광일, O.YEON"
+        }
+      ]
+    },
+    "01": {
+      "release": "2020/08/13",
+      "tracklist": [
+        {
+          "lead": true,
+          "title": "조깅",
+          "lyrics": "조원상, 신예찬, 최상엽",
+          "compose": "조원상",
+          "arrange": "조원상, O.YEON, 박지환"
+        },
+        {
+          "lead": false,
+          "title": "수박깨러가",
+          "lyrics": "조원상, 최상엽",
+          "compose": "조원상",
+          "arrange": "조원상, O.YEON, 박지환"
+        },
+        {
+          "lead": false,
+          "title": "Straight Line",
+          "lyrics": "조원상, 최상엽, 벤지",
+          "compose": "조원상",
+          "arrange": "조원상, O.YEON, 박지환"
+        },
+        {
+          "lead": false,
+          "title": "Missing Call (Feat. 수란)",
+          "lyrics": "조원상, 최상엽",
+          "compose": "조원상",
+          "arrange": "조원상, O.YEON, 박지환"
+        },
+        {
+          "lead": false,
+          "title": "충분히",
+          "lyrics": "신광일",
+          "compose": "신광일",
+          "arrange": "조원상, O.YEON"
+        },
+        {
+          "lead": false,
+          "title": "Flare",
+          "lyrics": "조원상, 신예찬, 이주혁, 신광일",
+          "compose": "조원상, 신예찬, 이주혁, 신광일",
+          "arrange": "조원상, 신예찬, 이주혁, 신광일, O.YEON"
+        }
+      ]
+    },
+    "02": {
+      "release": "2020/11/12",
+      "tracklist": [
+        {
+          "lead": true,
+          "title": "선잠",
+          "lyrics": "조원상, 신예찬, 이주혁, 신광일",
+          "compose": "조원상, 신예찬, 이주혁, 신광일",
+          "arrange": "조원상, 신예찬, 이주혁, 신광일, O.YEON, 박지환"
+        },
+        {
+          "lead": false,
+          "title": "Farther and Farther",
+          "lyrics": "조원상, 최상엽",
+          "compose": "조원상, O.YEON, 신예찬",
+          "arrange": "조원상, O.YEON, 박지환"
+        }
+      ]
+    },
+    "03": {
+      "release": "2021/02/16",
+      "tracklist": [
+        {
+          "lead": true,
+          "title": "히어로",
+          "lyrics": "조원상, 신예찬, 최상엽",
+          "compose": "조원상, O.YEON",
+          "arrange": "조원상, 신예찬, 최상엽, 신광일, O.YEON"
+        },
+        {
+          "lead": false,
+          "title": "난로",
+          "lyrics": "조원상, 신예찬, 최상엽, 신광일",
+          "compose": "조원상, O.YEON",
+          "arrange": "조원상, 신예찬, 최상엽, 신광일, O.YEON, 박지환"
+        },
+        {
+          "lead": false,
+          "title": "OUTRO",
+          "lyrics": "",
+          "compose": "조원상, O.YEON",
+          "arrange": "조원상, 신예찬, O.YEON"
+        }
+      ]
+    },
+    "04": {
+      "release": "2021/06/16",
+      "tracklist": [
+        {
+          "lead": true,
+          "title": "I Got U",
+          "lyrics": "조원상, 최상엽, 홍이삭",
+          "compose": "조원상, O.YEON, 최영훈",
+          "arrange": "조원상, 신예찬, 최상엽, 신광일, O.YEON, 최영훈, 박지환"
+        },
+        {
+          "lead": false,
+          "title": "One by One",
+          "lyrics": "조원상, 최상엽, 홍이삭",
+          "compose": "조원상, O.YEON, 최영훈",
+          "arrange": "조원상, O.YEON, 최영훈, 박지환"
+        },
+        {
+          "lead": false,
+          "title": "Buddy",
+          "lyrics": "조원상, 최상엽, 홍이삭",
+          "compose": "조원상, O.YEON, 최영훈",
+          "arrange": "조원상, O.YEON, 최영훈, 박지환"
+        },
+        {
+          "lead": false,
+          "title": "봄인지 여름인지",
+          "lyrics": "신예찬, 최상엽, 신광일, 이재준",
+          "compose": "신광일, Add Blessed, Subbie",
+          "arrange": "신광일, Add Blessed"
+        }
+      ]
+    },
+    "05": {
+      "release": "2021/08/20",
+      "tracklist": [
+        {
+          "lead": true,
+          "title": "동문서답",
+          "lyrics": "조원상, 최상엽",
+          "compose": "조원상, O.YEON, 최영훈, 박지환",
+          "arrange": "조원상, 신예찬, 최상엽, 신광일, O.YEON, 최영훈, 박지환"
+        },
+        {
+          "lead": false,
+          "title": "동문서답 (Inst.)",
+          "lyrics": "",
+          "compose": "조원상, O.YEON, 최영훈, 박지환",
+          "arrange": "조원상, 신예찬, 최상엽, 신광일, O.YEON, 최영훈, 박지환"
+        }
+      ]
+    },
+    "06": {
+      "release": "2021/12/07",
+      "tracklist": [
+        {
+          "lead": true,
+          "title": "떼굴떼굴",
+          "lyrics": "조원상",
+          "compose": "조원상, 최영훈, O.YEON",
+          "arrange": "조원상, 최영훈, O.YEON, 박지환"
+        },
+        {
+          "lead": false,
+          "title": "맞네",
+          "lyrics": "조원상, 예준",
+          "compose": "조원상, 최영훈",
+          "arrange": "조원상, 최영훈, 박지환"
+        },
+        {
+          "lead": false,
+          "title": "해가 뜨는 밤",
+          "lyrics": "최상엽",
+          "compose": "최상엽",
+          "arrange": "최상엽"
+        },
+        {
+          "lead": false,
+          "title": "꿈",
+          "lyrics": "신예찬",
+          "compose": "신예찬",
+          "arrange": "신예찬, 최상엽"
+        },
+        {
+          "lead": false,
+          "title": "놓지 않을게",
+          "lyrics": "신광일",
+          "compose": "신광일",
+          "arrange": "신광일"
+        },
+        {
+          "lead": false,
+          "title": "결국 아무것도 알 수 없었지만",
+          "lyrics": "조원상, 서정아",
+          "compose": "조원상, 최영훈, O.YEON",
+          "arrange": "조원상, 최영훈, O.YEON, 박지환"
+        }
+      ]
+    },
+    "07": {
+      "release": "2022/08/17",
+      "tracklist": [
+        {
+          "lead": false,
+          "title": "Knowhow",
+          "lyrics": "조원상, 이은송",
+          "compose": "조원상, 최영훈, BYMORE",
+          "arrange": "조원상, 최영훈, BYMORE, 박지환"
+        },
+        {
+          "lead": false,
+          "title": "MP3",
+          "lyrics": "조원상, 이은송",
+          "compose": "조원상, 이은송, 서예은",
+          "arrange": "조원상, O.YEON, 최영훈"
+        },
+        {
+          "lead": true,
+          "title": "놀이",
+          "lyrics": "조원상, 이은송",
+          "compose": "조원상",
+          "arrange": "조원상, O.YEON, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "10sec",
+          "lyrics": "조원상",
+          "compose": "조원상",
+          "arrange": "조원상, O.YEON, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "넌 혹시, 난 괜히",
+          "lyrics": "조원상, 이은송",
+          "compose": "조원상, 이은송",
+          "arrange": "조원상, 이은송, BYMORE, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "Domino (feat. 디핵)",
+          "lyrics": "조원상, 디핵, 이은송",
+          "compose": "조원상, 디핵, 이은송",
+          "arrange": "조원상, 이은송, 서예은"
+        },
+        {
+          "lead": false,
+          "title": "파울",
+          "lyrics": "조원상",
+          "compose": "조원상, 최영훈",
+          "arrange": "조원상, 최영훈, O.YEON"
+        },
+        {
+          "lead": false,
+          "title": "내 쓸쓸함은 차갑지 않아요",
+          "lyrics": "신예찬",
+          "compose": "신예찬",
+          "arrange": "최상엽, 최영훈, 신예찬"
+        },
+        {
+          "lead": false,
+          "title": "이미 다 알고 있었지만",
+          "lyrics": "조원상, 이은송",
+          "compose": "조원상, 이은송, 서예은",
+          "arrange": "조원상, O.YEON, 최영훈, BYMORE"
+        },
+        {
+          "lead": false,
+          "title": "이 밤을 잊지 말아요",
+          "lyrics": "신광일",
+          "compose": "신광일, 안소현",
+          "arrange": "신광일, 안소현"
+        },
+        {
+          "lead": false,
+          "title": "무색 (無色)",
+          "lyrics": "최상엽",
+          "compose": "최상엽",
+          "arrange": "최상엽"
+        },
+        {
+          "lead": false,
+          "title": "Opening",
+          "lyrics": "조원상, 이은송",
+          "compose": "조원상, O.YEON, 최영훈",
+          "arrange": "조원상, O.YEON, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "Ending",
+          "lyrics": "조원상, 이은송",
+          "compose": "조원상, O.YEON, 최영훈",
+          "arrange": "조원상, O.YEON, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "We will fly away (feat. 송은혜)",
+          "lyrics": "신광일, 신예찬",
+          "compose": "신광일, Add Blessed",
+          "arrange": "신광일, Add Blessed, 신예찬"
+        },
+        {
+          "lead": false,
+          "title": "나는 너야",
+          "lyrics": "최상엽, 조원상, 신광일, 신예찬",
+          "compose": "최상엽, 조원상, 신광일, 신예찬",
+          "arrange": "최상엽"
+        }
+      ]
+    },
+    "08": {
+      "release": "2023/02/23",
+      "tracklist": [
+        {
+          "lead": true,
+          "title": "아니 근데 진짜",
+          "lyrics": "조원상",
+          "compose": "조원상, O.YEON, 최영훈",
+          "arrange": "조원상, O.YEON, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "바쁘거든",
+          "lyrics": "조원상",
+          "compose": "조원상, 김진솔, 최영훈",
+          "arrange": "조원상, 김진솔, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "Never in Vain",
+          "lyrics": "조원상, 홍이삭, 황민재, 신서현",
+          "compose": "조원상, Add Blessed",
+          "arrange": "조원상, Add Blessed"
+        },
+        {
+          "lead": false,
+          "title": "채워",
+          "lyrics": "조원상, 황민재",
+          "compose": "조원상, O.YEON, 최영훈",
+          "arrange": "조원상, O.YEON, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "아니 근데 진짜 (Inst.)",
+          "lyrics": "",
+          "compose": "조원상, O.YEON, 최영훈",
+          "arrange": "조원상, O.YEON, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "바쁘거든 (Inst.)",
+          "lyrics": "",
+          "compose": "조원상, 김진솔, 최영훈",
+          "arrange": "조원상, 김진솔, 최영훈"
+        }
+      ]
+    },
+    "09": {
+      "release": "2023/08/17",
+      "tracklist": [
+        {
+          "lead": false,
+          "title": "뜨거",
+          "lyrics": "조원상, 이은송",
+          "compose": "조원상, O.YEON, 최영훈",
+          "arrange": "조원상, O.YEON, 최영훈, T-lack(HIGHBRID)"
+        },
+        {
+          "lead": true,
+          "title": "아지랑이",
+          "lyrics": "조원상, 이은송",
+          "compose": "조원상, O.YEON, 최영훈, 이은송",
+          "arrange": "조원상, O.YEON, 최영훈, T-lack(HIGHBRID)"
+        },
+        {
+          "lead": false,
+          "title": "Magic",
+          "lyrics": "신광일",
+          "compose": "신광일, Add Blessed (NEWTYPE)",
+          "arrange": "신광일, Add Blessed (NEWTYPE)"
+        },
+        {
+          "lead": false,
+          "title": "내버려",
+          "lyrics": "조원상, 이은송",
+          "compose": "조원상, O.YEON, 최영훈",
+          "arrange": "조원상, O.YEON, 최영훈, T-lack(HIGHBRID)"
+        }
+      ]
+    },
+    "10": {
+      "release": "2023/12/05",
+      "tracklist": [
+        {
+          "lead": true,
+          "title": "Boogie Man",
+          "lyrics": "조원상",
+          "compose": "조원상, EUGENE(HIGHBRID), 최영훈",
+          "arrange": "조원상, EUGENE(HIGHBRID), 최영훈, DINT"
+        },
+        {
+          "lead": false,
+          "title": "Over The Christmas",
+          "lyrics": "조원상",
+          "compose": "조원상, O.YEON, 최영훈",
+          "arrange": "조원상, O.YEON, 최영훈, EUGENE(HIGHBRID)"
+        }
+      ]
+    },
+    "11": {
+      "release": "2024/03/20",
+      "tracklist": [
+        {
+          "lead": true,
+          "title": "못 죽는 기사와 비단 요람",
+          "lyrics": "조원상",
+          "compose": "조원상, O.YEON, 최영훈",
+          "arrange": "조원상, O.YEON, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "못 죽는 기사와 비단 요람 (Inst.)",
+          "lyrics": "",
+          "compose": "조원상, O.YEON, 최영훈",
+          "arrange": "조원상, O.YEON, 최영훈"
+        }
+      ]
+    }
+  }
+}

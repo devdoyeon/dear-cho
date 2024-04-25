@@ -6,6 +6,7 @@
   font-family: 'NotoSansR', '맑은 고딕', sans-serif;
   font-weight: normal;
   color: white;
+  z-index: 1;
 
   ::-webkit-scrollbar {
     width: 8px;
