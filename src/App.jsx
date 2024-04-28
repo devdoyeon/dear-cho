@@ -3,10 +3,10 @@ import MainPage from "pages/MainPage";
 import IntroducePage from "pages/IntroducePage";
 import AlbumPage from "pages/AlbumPage";
 import Navigator from "components/Navigator";
-import "./App.css";
-import "styles/scss/common.scss";
 import SnsPage from "./pages/SnsPage";
 import Footer from './components/Footer'
+import "./App.css";
+import "styles/scss/common.scss";
 
 function App() {
   const [toggle, setToggle] = useState(false);

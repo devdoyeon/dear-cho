@@ -8,7 +8,6 @@ import twitter from "images/snsIcon/twitter.svg";
 import facebook from "images/snsIcon/facebook.svg";
 import youtube from "images/snsIcon/youtube.svg";
 import soundcloud from "images/snsIcon/soundcloud.svg";
-import sampleImg from "images/albumCover/1.jpg";
 
 const SnsPage = ({ scrollY }) => {
   useEffect(() => {

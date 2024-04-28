@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import $ from "jquery";
-
 import AlbumModal from "components/AlbumModal";
+import ListWrap from "components/ListWrap";
+
 import albumBg from "images/albumBg.jpg";
 import album00 from "images/albumCover/0.jpg";
 import album01 from "images/albumCover/1.jpg";
@@ -15,7 +16,6 @@ import album08 from "images/albumCover/8.jpg";
 import album09 from "images/albumCover/9.jpg";
 import album10 from "images/albumCover/10.jpg";
 import album11 from "images/albumCover/11.jpg";
-import ListWrap from "../components/ListWrap";
 
 const AlbumPage = ({ scrollY }) => {
   const [modalToggle, setModalToggle] = useState(false);
