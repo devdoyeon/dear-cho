@@ -15,6 +15,7 @@ import album08 from "images/albumCover/8.jpg";
 import album09 from "images/albumCover/9.jpg";
 import album10 from "images/albumCover/10.jpg";
 import album11 from "images/albumCover/11.jpg";
+import ListWrap from "../components/ListWrap";
 
 const AlbumPage = ({ scrollY }) => {
   const [modalToggle, setModalToggle] = useState(false);
@@ -42,7 +43,7 @@ const AlbumPage = ({ scrollY }) => {
           <img
             src={albumCover}
             alt={idx}
-            className="album-cover"
+            className="item album-cover"
             onClick={() => {
               setImgInfo((prev) => {
                 const clone = { ...prev };
@@ -67,38 +68,11 @@ const AlbumPage = ({ scrollY }) => {
 
   return (
     <>
-      {" "}
       <div className="container albumPage">
         <h2 className="title album-title odd">ALBUM</h2>
         <img src={albumBg} alt="앨범 배경이미지" className="pageImg" />
-        <div className="column album-wrap">
-          <span className="click-guide">CLICK ME!</span>
-          <div className="row album-list">{renderAlbumList()}</div>
-          <div className="row scroll-wrap">
-            <button
-              className="scroll-btn prev"
-              onClick={() =>
-                document.querySelector(".album-list").scrollBy({
-                  left: -(window.innerWidth / 2),
-                  behavior: "smooth",
-                })
-              }
-            >
-              &#60;
-            </button>
-            <button
-              className="scroll-btn next"
-              onClick={() =>
-                document.querySelector(".album-list").scrollBy({
-                  left: window.innerWidth / 2,
-                  behavior: "smooth",
-                })
-              }
-            >
-              &#62;
-            </button>
-          </div>
-        </div>
+        <ListWrap renderListFn={renderAlbumList} className='album-wrap' />
+        {/*<div className="row album-list">{renderAlbumList()}</div>*/}
       </div>
       {modalToggle && (
         <AlbumModal

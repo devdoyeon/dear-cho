@@ -5,7 +5,8 @@ import AlbumPage from "pages/AlbumPage";
 import Navigator from "components/Navigator";
 import "./App.css";
 import "styles/scss/common.scss";
-import UnknownPage from "./pages/UnknownPage";
+import SnsPage from "./pages/SnsPage";
+import Footer from './components/Footer'
 
 function App() {
   const [toggle, setToggle] = useState(false);
@@ -32,11 +33,12 @@ function App() {
 
   return (
     <div className="App">
-      {<Navigator toggle={toggle} />}
-      {<MainPage />}
-      {<IntroducePage scrollY={scrollY} />}
-      {<AlbumPage scrollY={scrollY} />}
-      {<UnknownPage scrollY={scrollY} />}
+      <Navigator toggle={toggle} />
+      <MainPage />
+      <IntroducePage scrollY={scrollY} />
+      <AlbumPage scrollY={scrollY} />
+      <SnsPage scrollY={scrollY} />
+      <Footer/>
     </div>
   );
 }
