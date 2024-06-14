@@ -359,8 +359,16 @@
         .list {
           .card {
             img {
-              width: 70px;
-              height: 70px;
+              width: 60px;
+              height: 60px;
+            }
+            div {
+              h3 {
+                font-size: 18px;
+              }
+              p {
+                font-size: 16px;
+              }
             }
           }
         }
