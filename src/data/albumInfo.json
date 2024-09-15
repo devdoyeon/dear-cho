@@ -461,6 +461,48 @@
           "arrange": "조원상, O.YEON, 최영훈"
         }
       ]
+    },
+    {
+      "albumType": "5th Mini Album",
+      "albumName": "FROM.",
+      "release": "2024/08/14",
+      "tracklist": [
+        {
+          "lead": true,
+          "title": "빌런",
+          "lyrics": "조원상",
+          "compose": "조원상, 최영훈, O.YEON, Eugene (HIGHBRID)",
+          "arrange": "조원상, 최영훈, O.YEON, Eugene (HIGHBRID)"
+        },
+        {
+          "lead": true,
+          "title": "못난이",
+          "lyrics": "조원상",
+          "compose": "조원상, 최영훈, O.YEON, Eugene (HIGHBRID)",
+          "arrange": "조원상, 최영훈, O.YEON, Eugene (HIGHBRID)"
+        },
+        {
+          "lead": false,
+          "title": "도깨비춤",
+          "lyrics": "조원상",
+          "compose": "조원상, 최영훈, O.YEON, Eugene (HIGHBRID)",
+          "arrange": "조원상, 최영훈, O.YEON, Eugene (HIGHBRID)"
+        },
+        {
+          "lead": false,
+          "title": "남김없이",
+          "lyrics": "신광일",
+          "compose": "신광일, Add Blessed",
+          "arrange": "신광일, Add Blessed"
+        },
+        {
+          "lead": false,
+          "title": "낙화",
+          "lyrics": "조원상",
+          "compose": "조원상, 최영훈, O.YEON",
+          "arrange": "조원상, 최영훈, O.YEON"
+        }
+      ]
     }
   ]
 }

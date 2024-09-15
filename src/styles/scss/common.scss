@@ -181,6 +181,7 @@
     @include flex-style(column);
     opacity: 1;
     position: relative;
+    width: 100%;
     .album-modal-cover {
       width: 40%;
       border-radius: 10px;
