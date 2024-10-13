@@ -1,4 +1,4 @@
-@import "./style";
+@import './style';
 
 .column {
   @include flex-style(column);
@@ -297,6 +297,9 @@
       cursor: pointer;
       &:last-child {
         margin-right: 0;
+      }
+      .cover-thumbnail {
+        width: 100px;
       }
     }
   }
