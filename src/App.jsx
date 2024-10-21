@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import MainPage from 'pages/MainPage';
 import IntroducePage from 'pages/IntroducePage';
 import AlbumPage from 'pages/AlbumPage';
-import CoverPage from 'pages/CoverPage';
+import YoutubePage from 'pages/YoutubePage';
 import Navigator from 'components/Navigator';
 import SnsPage from './pages/SnsPage';
 import Footer from './components/Footer';
@@ -37,7 +37,7 @@ function App() {
       <MainPage />
       <IntroducePage scrollY={scrollY} />
       <AlbumPage scrollY={scrollY} />
-      <CoverPage scrollY={scrollY} />
+      <YoutubePage scrollY={scrollY} />
       <SnsPage scrollY={scrollY} />
       <Footer />
     </div>
