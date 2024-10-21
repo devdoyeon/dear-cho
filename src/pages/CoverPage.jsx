@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import $ from 'jquery';
 import { sample } from 'js/api';
-import coverBg from 'images/coverBg.jpeg';
+import coverBg from 'images/coverBg.jpg';
 import ListWrap from 'components/ListWrap';
 
 const CoverPage = ({ scrollY }) => {
