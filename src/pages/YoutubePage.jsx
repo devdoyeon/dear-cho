@@ -5,7 +5,7 @@ import coverBg from "images/coverBg.jpg";
 import ListWrap from "components/ListWrap";
 
 const YoutubePage = ({ scrollY }) => {
-  const [youtubeArr, setYoutubeARr] = useState([]);
+  const [youtubeArr, setYoutubeArr] = useState([]);
   let prevent = false;
 
   useEffect(() => {
@@ -23,12 +23,12 @@ const YoutubePage = ({ scrollY }) => {
     }, 200);
     const result = await sample();
     if (typeof result === "object") {
-      setYoutubeARr(result?.data?.items);
+      setYoutubeArr(result?.data?.items);
     }
   };
 
   const renderCoverList = () => {
-    return youtubeArr.map(({ id, snippet }) => {
+    return youtubeArr?.map(({ id, snippet }) => {
       return (
         <>
           <div className="item">
