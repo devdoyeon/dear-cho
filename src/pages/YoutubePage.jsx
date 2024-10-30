@@ -26,7 +26,6 @@ const YoutubePage = ({ scrollY }) => {
       setYoutubeArr(result?.data?.items);
       const cloudResult = await getYoutubeList('cloudcho')
       if (typeof cloudResult === 'object') {
-        console.log(cloudResult.data.items)
         setYoutubeArr(prev => {
           let clone = [...prev];
           clone = [...prev, ...cloudResult.data.items]
