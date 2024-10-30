@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import $ from "jquery";
-import { sample } from "js/api";
+import { getYoutubeList } from "js/api";
 import coverBg from "images/coverBg.jpg";
 import ListWrap from "components/ListWrap";
 
@@ -21,9 +21,18 @@ const YoutubePage = ({ scrollY }) => {
     setTimeout(() => {
       prevent = false;
     }, 200);
-    const result = await sample();
+    const result = await getYoutubeList('chochocho');
     if (typeof result === "object") {
       setYoutubeArr(result?.data?.items);
+      const cloudResult = await getYoutubeList('cloudcho')
+      if (typeof cloudResult === 'object') {
+        console.log(cloudResult.data.items)
+        setYoutubeArr(prev => {
+          let clone = [...prev];
+          clone = [...prev, ...cloudResult.data.items]
+          return clone;
+        })
+      }
     }
   };
 
