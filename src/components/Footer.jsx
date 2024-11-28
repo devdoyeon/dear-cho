@@ -1,6 +1,6 @@
 import logo from "images/dearcho.svg";
-import githubIcon from "images/github.svg";
-import mailIcon from "images/mailIcon.svg";
+import githubIcon from "images/snsIcon/github.svg";
+import mailIcon from "images/snsIcon/mailIcon.svg";
 
 const Footer = () => {
   return (
