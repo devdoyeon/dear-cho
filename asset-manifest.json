@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3eef7f77.css",
-    "main.js": "/static/js/main.45aac4a6.js",
+    "main.css": "/static/css/main.1c0e3436.css",
+    "main.js": "/static/js/main.e0264ffc.js",
     "static/js/453.bae3a557.chunk.js": "/static/js/453.bae3a557.chunk.js",
     "static/media/4.jpg": "/static/media/4.66d9d11c81a7ed3da39f.jpg",
     "static/media/5.jpg": "/static/media/5.f58fbceec75ea61840a7.jpg",
@@ -10,6 +10,7 @@
     "static/media/7.jpg": "/static/media/7.bea546ba8fb1b363bf70.jpg",
     "static/media/9.jpg": "/static/media/9.99d1658a27333fe18a0b.jpg",
     "static/media/NotoSansKR-Black.otf": "/static/media/NotoSansKR-Black.57ee16cda12f5e729a0a.otf",
+    "static/media/soundcloudBg.jpg": "/static/media/soundcloudBg.bbcd05b636973d4dae57.jpg",
     "static/media/NotoSansKR-Bold.otf": "/static/media/NotoSansKR-Bold.29abf35d525346faa333.otf",
     "static/media/NotoSansKR-Medium.otf": "/static/media/NotoSansKR-Medium.72ba455576ce8174ffa8.otf",
     "static/media/NotoSansKR-Regular.otf": "/static/media/NotoSansKR-Regular.457762eaaf7bb2aa2893.otf",
@@ -37,12 +38,12 @@
     "static/media/youtube.svg": "/static/media/youtube.aeeb2672a2029540f333011ba76f4163.svg",
     "static/media/scrollDown.svg": "/static/media/scrollDown.160720e1b67e24a761dc7edc61cb2ed6.svg",
     "index.html": "/index.html",
-    "main.3eef7f77.css.map": "/static/css/main.3eef7f77.css.map",
-    "main.45aac4a6.js.map": "/static/js/main.45aac4a6.js.map",
+    "main.1c0e3436.css.map": "/static/css/main.1c0e3436.css.map",
+    "main.e0264ffc.js.map": "/static/js/main.e0264ffc.js.map",
     "453.bae3a557.chunk.js.map": "/static/js/453.bae3a557.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3eef7f77.css",
-    "static/js/main.45aac4a6.js"
+    "static/css/main.1c0e3436.css",
+    "static/js/main.e0264ffc.js"
   ]
 }
