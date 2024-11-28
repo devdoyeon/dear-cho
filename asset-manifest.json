@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.3eef7f77.css",
-    "main.js": "/static/js/main.81f28163.js",
+    "main.js": "/static/js/main.45aac4a6.js",
     "static/js/453.bae3a557.chunk.js": "/static/js/453.bae3a557.chunk.js",
     "static/media/4.jpg": "/static/media/4.66d9d11c81a7ed3da39f.jpg",
     "static/media/5.jpg": "/static/media/5.f58fbceec75ea61840a7.jpg",
-    "static/media/mainPhoto.jpg": "/static/media/mainPhoto.7c1a857c7a572d1328c1.jpg",
+    "static/media/SnsBg.jpg": "/static/media/SnsBg.3a363e29e57c394ee31c.jpg",
+    "static/media/mainPhoto.jpg": "/static/media/mainPhoto.d4af020ffdb8c47b883e.jpg",
     "static/media/7.jpg": "/static/media/7.bea546ba8fb1b363bf70.jpg",
     "static/media/9.jpg": "/static/media/9.99d1658a27333fe18a0b.jpg",
     "static/media/NotoSansKR-Black.otf": "/static/media/NotoSansKR-Black.57ee16cda12f5e729a0a.otf",
     "static/media/NotoSansKR-Bold.otf": "/static/media/NotoSansKR-Bold.29abf35d525346faa333.otf",
     "static/media/NotoSansKR-Medium.otf": "/static/media/NotoSansKR-Medium.72ba455576ce8174ffa8.otf",
     "static/media/NotoSansKR-Regular.otf": "/static/media/NotoSansKR-Regular.457762eaaf7bb2aa2893.otf",
-    "static/media/SnsBg.jpg": "/static/media/SnsBg.38d89269d61011c37d8f.jpg",
     "static/media/introBg.jpg": "/static/media/introBg.4cb9cced2b5c85ea7fd6.jpg",
     "static/media/NotoSansKR-Thin.otf": "/static/media/NotoSansKR-Thin.30fa6d56876857a21eb0.otf",
     "static/media/6.jpg": "/static/media/6.7a4e44ea0bce31cb53e7.jpg",
@@ -38,11 +38,11 @@
     "static/media/scrollDown.svg": "/static/media/scrollDown.160720e1b67e24a761dc7edc61cb2ed6.svg",
     "index.html": "/index.html",
     "main.3eef7f77.css.map": "/static/css/main.3eef7f77.css.map",
-    "main.81f28163.js.map": "/static/js/main.81f28163.js.map",
+    "main.45aac4a6.js.map": "/static/js/main.45aac4a6.js.map",
     "453.bae3a557.chunk.js.map": "/static/js/453.bae3a557.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3eef7f77.css",
-    "static/js/main.81f28163.js"
+    "static/js/main.45aac4a6.js"
   ]
 }
