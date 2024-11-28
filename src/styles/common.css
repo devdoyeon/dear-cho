@@ -123,18 +123,18 @@
   height: 100vh;
   opacity: 1;
 }
-.container.introducePage .info-box {
+.container.introduce-page .info-box {
   position: absolute;
   bottom: 100px;
   right: 100px;
   opacity: 0;
 }
-.container.introducePage .info-box .row span {
+.container.introduce-page .info-box .row span {
   font-size: 20px;
   margin-right: 10px;
   transform: translateY(7px);
 }
-.container.introducePage .info-box .row h4 {
+.container.introduce-page .info-box .row h4 {
   font-size: 60px;
   font-style: italic;
   font-family: "NotoSansB", "맑은 고딕", sans-serif;
@@ -158,6 +158,21 @@
 }
 .container.sns-page .list-wrap .list .card div p {
   white-space: nowrap;
+}
+.container.sc-page .list-wrap .list .card {
+  margin: 0 150px;
+}
+.container.sc-page .list-wrap .list .card .sc-item {
+  width: 450px;
+  height: 300px;
+}
+.container.sc-page p {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 10px;
+  font-family: "NotoSansT", "맑은 고딕", sans-serif;
 }
 .container .animate {
   animation: txtUpAnimation 0.5s ease-in-out;
@@ -376,10 +391,10 @@
   .container .title {
     font-size: 50px;
   }
-  .container.introducePage .info-box .row h4 {
+  .container.introduce-page .info-box .row h4 {
     font-size: 40px;
   }
-  .container.introducePage .info-box .row span {
+  .container.introduce-page .info-box .row span {
     font-size: 16px;
   }
   .container .list-wrap {
@@ -448,15 +463,25 @@
   .container.main .scroll-down-icon {
     scale: 0.7;
   }
-  .container.introducePage .info-box {
+  .container.introduce-page .info-box {
     bottom: 50px;
     right: 50px;
   }
-  .container.introducePage .info-box .row span {
+  .container.introduce-page .info-box .row span {
     font-size: 8px;
   }
-  .container.introducePage .info-box .row h4 {
+  .container.introduce-page .info-box .row h4 {
     font-size: 20px;
+  }
+  .container.sc-page .list-wrap .list .card {
+    margin: 0 35px;
+  }
+  .container.sc-page .list-wrap .list .card .sc-item {
+    width: 250px;
+    height: 150px;
+  }
+  .container.sc-page p {
+    display: block;
   }
   .container .list-wrap {
     bottom: 30px;

@@ -17,7 +17,7 @@ const SnsPage = ({ scrollY }) => {
       $('.card-wrap').addClass('animate');
   }, [scrollY]);
 
-  const sampleFn = () => {
+  const renderSNSInfo = () => {
     return snsInfo?.information.map(
       ({ type, name, link }) => {
         return (
@@ -49,9 +49,9 @@ const SnsPage = ({ scrollY }) => {
 
   return (
     <div className='container sns-page'>
-      <h2 className='title sns-title odd'>SNS & MEDIA</h2>
-      <img src={SnsImg} alt='진짜머만들지' className='pageImg' />
-      <ListWrap renderListFn={sampleFn} className='card-wrap' />
+      <h2 className='title sns-title even'>SNS & MEDIA</h2>
+      <img src={SnsImg} alt='SNS Page Image' className='pageImg' />
+      <ListWrap renderListFn={renderSNSInfo} className='card-wrap' />
     </div>
   );
 };

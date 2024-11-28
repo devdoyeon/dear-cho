@@ -70,7 +70,7 @@ const AlbumPage = ({ scrollY }) => {
 
   return (
     <>
-      <div className="container albumPage">
+      <div className="container album-page">
         <h2 className="title album-title odd">ALBUM</h2>
         <img src={albumBg} alt="앨범 배경이미지" className="pageImg" />
         <ListWrap renderListFn={renderAlbumList} className='album-wrap' />

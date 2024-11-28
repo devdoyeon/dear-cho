@@ -11,7 +11,7 @@ const IntroducePage = ({ scrollY }) => {
   }, [scrollY]);
 
   return (
-    <div className="container introducePage">
+    <div className="container introduce-page">
       <h2 className="title info-title even">INTRODUCE</h2>
       <img src={introBg} alt="메인이미지" className="introduceBg pageImg" />
       <div className="column info-box">
