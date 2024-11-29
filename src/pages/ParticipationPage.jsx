@@ -74,18 +74,6 @@ const ParticipationPage = ({ scrollY }) => {
         />
         <ListWrap
           renderListFn={renderParticipatedAlbumList}
-          className='album-wrap'
-        />
-      </div>
-      <div className='container participation-page'>
-        <h2 className='title participation-title odd'>PARTICIPATED SONG</h2>
-        <img
-          src={participationBg}
-          alt='참여 음반 배경이미지'
-          className='pageImg'
-        />
-        <ListWrap
-          renderListFn={renderParticipatedAlbumList}
           className='participated-song-wrap'
         />
       </div>
