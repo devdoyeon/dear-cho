@@ -1,0 +1,49 @@
+{
+  "information": [
+    {
+      "title": "BUCKET LIST",
+      "artist": "박현진, 에이칠로",
+      "parts": ["작곡", "편곡"]
+    },
+    {
+      "title": "12 O'clock",
+      "artist": "우주소녀",
+      "parts": ["작곡", "편곡"]
+    },
+    {
+      "title": "비가 내리는 날에는",
+      "artist": "윤하",
+      "parts": ["베이스"]
+    },
+    {
+      "title": "A.I. (Artificial Impression)",
+      "artist": "Summer Soul",
+      "parts": ["작곡", "편곡", "베이스"]
+    },
+    {
+      "title": "다시는 사랑하지 않고, 이별에 아파하기 싫어",
+      "artist": "백지영",
+      "parts": ["베이스"]
+    },
+    {
+      "title": "먹구름",
+      "artist": "윤하",
+      "parts": ["베이스"]
+    },
+    {
+      "title": "Daydream",
+      "artist": "하진",
+      "parts": ["작곡", "편곡", "베이스"]
+    },
+    {
+      "title": "반딧불",
+      "artist": "도영",
+      "parts": ["작사", "작곡", "편곡"]
+    },
+    {
+      "title": "Start Line",
+      "artist": "아이린",
+      "parts": ["작사"]
+    }
+  ]
+}

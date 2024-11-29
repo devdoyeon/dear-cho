@@ -284,6 +284,17 @@
           }
         }
       }
+      &.participated {
+        justify-content: center;
+        .song-title {
+          font-family: $blackFont;
+          font-size: 30px;
+          margin-bottom: 30px;
+        }
+        b {
+          font-family: $boldFont;
+        }
+      }
     }
   }
 }
@@ -575,6 +586,12 @@
                 font-size: 8px;
               }
             }
+          }
+        }
+        &.participated {
+          .song-title {
+            font-size: 25px;
+            margin-bottom: 15px;
           }
         }
       }

@@ -74,7 +74,6 @@ const AlbumPage = ({ scrollY }) => {
         <h2 className="title album-title odd">ALBUM</h2>
         <img src={albumBg} alt="앨범 배경이미지" className="pageImg" />
         <ListWrap renderListFn={renderAlbumList} className='album-wrap' />
-        {/*<div className="row album-list">{renderAlbumList()}</div>*/}
       </div>
       {modalToggle && (
         <AlbumModal

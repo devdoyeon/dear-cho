@@ -321,6 +321,17 @@
 .album-modal-bg .album-modal .album-modal-content .song-list .song:last-child hr {
   display: none;
 }
+.album-modal-bg .album-modal .album-modal-content.participated {
+  justify-content: center;
+}
+.album-modal-bg .album-modal .album-modal-content.participated .song-title {
+  font-family: "NotoSansBlack", "맑은 고딕", sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.album-modal-bg .album-modal .album-modal-content.participated b {
+  font-family: "NotoSansB", "맑은 고딕", sans-serif;
+}
 
 .list-wrap {
   position: absolute;
@@ -538,6 +549,10 @@
   }
   .album-modal-bg .album-modal .album-modal-content .song-list .song span b {
     font-size: 8px;
+  }
+  .album-modal-bg .album-modal .album-modal-content.participated .song-title {
+    font-size: 25px;
+    margin-bottom: 15px;
   }
 }
 

@@ -1,0 +1,103 @@
+import { useEffect, useState } from 'react'
+import participationBg from 'images/participationBg.jpeg'
+import $ from 'jquery'
+import ParticipatedSongModal from 'components/ParticipatedSongModal'
+import ListWrap from 'components/ListWrap'
+
+import partSong0 from 'images/participatedAlbumCover/0.jpg'
+import partSong1 from 'images/participatedAlbumCover/1.jpg'
+import partSong2 from 'images/participatedAlbumCover/2.jpg'
+import partSong3 from 'images/participatedAlbumCover/3.jpg'
+import partSong4 from 'images/participatedAlbumCover/4.jpg'
+import partSong5 from 'images/participatedAlbumCover/5.jpg'
+import partSong6 from 'images/participatedAlbumCover/6.jpg'
+import partSong7 from 'images/participatedAlbumCover/7.jpg'
+import partSong8 from 'images/participatedAlbumCover/8.jpg'
+
+const ParticipationPage = ({ scrollY }) => {
+  const [modalToggle, setModalToggle] = useState(false)
+  const [imgInfo, setImgInfo] = useState({ img: '', idx: '' })
+
+  const partSongArr = [
+    partSong0,
+    partSong1,
+    partSong2,
+    partSong3,
+    partSong4,
+    partSong5,
+    partSong6,
+    partSong7,
+    partSong8,
+  ]
+
+  const renderParticipatedAlbumList = () => {
+    return partSongArr.map((albumCover, idx) => {
+      return (
+        <>
+          <img
+            src={albumCover}
+            alt={idx}
+            className='item album-cover'
+            onClick={() => {
+              setImgInfo(prev => {
+                const clone = { ...prev }
+                clone.img = albumCover
+                clone.idx = idx
+                return clone
+              })
+              setModalToggle(true)
+            }}
+          />
+        </>
+      )
+    })
+  }
+
+  useEffect(() => {
+    if (
+      scrollY >
+      $('.participation-title').offset().top - (window.innerHeight - 200)
+    )
+      $('.participation-title').addClass('animate')
+    if (scrollY > $('.participated-song-wrap').offset().top - (window.innerHeight - 200))
+      $('.participated-song-wrap').addClass('animate')
+  }, [scrollY])
+
+  return (
+    <>
+      <div className='container participation-page'>
+        <h2 className='title participation-title odd'>PARTICIPATED SONG</h2>
+        <img
+          src={participationBg}
+          alt='참여 음반 배경이미지'
+          className='pageImg'
+        />
+        <ListWrap
+          renderListFn={renderParticipatedAlbumList}
+          className='album-wrap'
+        />
+      </div>
+      <div className='container participation-page'>
+        <h2 className='title participation-title odd'>PARTICIPATED SONG</h2>
+        <img
+          src={participationBg}
+          alt='참여 음반 배경이미지'
+          className='pageImg'
+        />
+        <ListWrap
+          renderListFn={renderParticipatedAlbumList}
+          className='participated-song-wrap'
+        />
+      </div>
+      {modalToggle && (
+        <ParticipatedSongModal
+          imgInfo={imgInfo}
+          modalToggle={modalToggle}
+          setModalToggle={setModalToggle}
+        />
+      )}
+    </>
+  )
+}
+
+export default ParticipationPage

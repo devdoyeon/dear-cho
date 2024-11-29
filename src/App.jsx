@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react'
+import Navigator from 'components/Navigator'
 import MainPage from 'pages/MainPage'
 import IntroducePage from 'pages/IntroducePage'
 import AlbumPage from 'pages/AlbumPage'
+import ParticipationPage from './pages/ParticipationPage'
 import YoutubePage from 'pages/YoutubePage'
-import Navigator from 'components/Navigator'
+import SoundCloudPage from './pages/SoundCloudPage'
 import SnsPage from './pages/SnsPage'
 import Footer from './components/Footer'
 import './App.css'
-import SoundCloudPage from './pages/SoundCloudPage'
 
 function App() {
   const [toggle, setToggle] = useState(false)
@@ -38,6 +39,7 @@ function App() {
       <MainPage />
       <IntroducePage scrollY={scrollY} />
       <AlbumPage scrollY={scrollY} />
+      <ParticipationPage scrollY={scrollY}/>
       <YoutubePage scrollY={scrollY} />
       <SoundCloudPage scrollY={scrollY} />
       <SnsPage scrollY={scrollY} />
