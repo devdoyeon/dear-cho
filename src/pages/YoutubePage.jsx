@@ -64,7 +64,7 @@ const YoutubePage = ({ scrollY }) => {
   return (
     <>
       <div className="container youtubePage">
-        <h2 className="title youtube-title even" onClick={getYoutube}>
+        <h2 className="title youtube-title odd" onClick={getYoutube}>
           YOUTUBE
         </h2>
         <img src={coverBg} alt="커버 배경이미지" className="pageImg" />

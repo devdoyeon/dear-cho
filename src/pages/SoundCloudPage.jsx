@@ -31,7 +31,7 @@ const SoundCloudPage = ({ scrollY }) => {
 
   return (
     <div className='container sc-page'>
-      <h2 className='title sc-title odd'>SOUNDCLOUD</h2>
+      <h2 className='title sc-title even'>SOUNDCLOUD</h2>
       <img src={soundCloudBg} alt='SoundCloud Page Image' className='pageImg' />
       <ListWrap renderListFn={renderSCWidget} className='sc-wrap' />
       <p>모바일 환경에서는 Listen in browser를 클릭해 주셔야 음악을 재생하실 수 있습니다.</p>

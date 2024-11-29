@@ -49,7 +49,7 @@ const SnsPage = ({ scrollY }) => {
 
   return (
     <div className='container sns-page'>
-      <h2 className='title sns-title even'>SNS & MEDIA</h2>
+      <h2 className='title sns-title odd'>SNS & MEDIA</h2>
       <img src={SnsImg} alt='SNS Page Image' className='pageImg' />
       <ListWrap renderListFn={renderSNSInfo} className='card-wrap' />
     </div>

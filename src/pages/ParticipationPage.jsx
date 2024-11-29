@@ -66,7 +66,7 @@ const ParticipationPage = ({ scrollY }) => {
   return (
     <>
       <div className='container participation-page'>
-        <h2 className='title participation-title odd'>PARTICIPATED SONG</h2>
+        <h2 className='title participation-title even'>PARTICIPATED SONG</h2>
         <img
           src={participationBg}
           alt='참여 음반 배경이미지'
