@@ -288,8 +288,8 @@
         justify-content: center;
         .song-title {
           font-family: $blackFont;
-          font-size: 30px;
-          margin-bottom: 30px;
+          font-size: 25px;
+          margin: 0 20px 30px 20px;
         }
         b {
           font-family: $boldFont;
@@ -590,8 +590,15 @@
         }
         &.participated {
           .song-title {
-            font-size: 25px;
+            font-size: 15px;
             margin-bottom: 15px;
+          }
+          .artist {
+            font-size: 13px;
+            margin-bottom: -10px;
+          }
+          .parts {
+            font-size: 13px;
           }
         }
       }

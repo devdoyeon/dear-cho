@@ -39,7 +39,7 @@ function App() {
       <MainPage />
       <IntroducePage scrollY={scrollY} />
       <AlbumPage scrollY={scrollY} />
-      <ParticipationPage scrollY={scrollY}/>
+      <ParticipationPage scrollY={scrollY} />
       <YoutubePage scrollY={scrollY} />
       <SoundCloudPage scrollY={scrollY} />
       <SnsPage scrollY={scrollY} />

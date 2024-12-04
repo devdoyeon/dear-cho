@@ -326,8 +326,8 @@
 }
 .album-modal-bg .album-modal .album-modal-content.participated .song-title {
   font-family: "NotoSansBlack", "맑은 고딕", sans-serif;
-  font-size: 30px;
-  margin-bottom: 30px;
+  font-size: 25px;
+  margin: 0 20px 30px 20px;
 }
 .album-modal-bg .album-modal .album-modal-content.participated b {
   font-family: "NotoSansB", "맑은 고딕", sans-serif;
@@ -551,8 +551,15 @@
     font-size: 8px;
   }
   .album-modal-bg .album-modal .album-modal-content.participated .song-title {
-    font-size: 25px;
+    font-size: 15px;
     margin-bottom: 15px;
+  }
+  .album-modal-bg .album-modal .album-modal-content.participated .artist {
+    font-size: 13px;
+    margin-bottom: -10px;
+  }
+  .album-modal-bg .album-modal .album-modal-content.participated .parts {
+    font-size: 13px;
   }
 }
 
