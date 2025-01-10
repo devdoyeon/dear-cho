@@ -13,6 +13,7 @@ import partSong5 from 'images/participatedAlbumCover/5.jpg'
 import partSong6 from 'images/participatedAlbumCover/6.jpg'
 import partSong7 from 'images/participatedAlbumCover/7.jpg'
 import partSong8 from 'images/participatedAlbumCover/8.jpg'
+import partSong9 from 'images/participatedAlbumCover/9.jpg'
 
 const ParticipationPage = ({ scrollY }) => {
   const [modalToggle, setModalToggle] = useState(false)
@@ -28,6 +29,7 @@ const ParticipationPage = ({ scrollY }) => {
     partSong6,
     partSong7,
     partSong8,
+    partSong9
   ]
 
   const renderParticipatedAlbumList = () => {
