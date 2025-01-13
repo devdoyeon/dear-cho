@@ -28,7 +28,7 @@ const Footer = () => {
         </p>
         <p className="for">for Wonsang Cho</p>
         <p className="copyright">
-          Copyright 2024. devdoyeon all rights reserved.
+          Copyright 2025. devdoyeon all rights reserved.
         </p>
       </div>
       <img src={logo} alt="DEAR CHO 로고" className="logo" />
