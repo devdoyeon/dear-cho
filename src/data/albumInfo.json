@@ -503,6 +503,20 @@
           "arrange": "조원상, 최영훈, O.YEON"
         }
       ]
+    },
+    {
+      "albumType": "6th Mini Album",
+      "albumName": "잠깨",
+      "release": "2025/03/27",
+      "tracklist": [
+        {
+          "lead": true,
+          "title": "잠깨",
+          "lyrics": "조원상",
+          "compose": "조원상 , Eugene (HIGHBRID) , O.YEON , 최영훈 ",
+          "arrange": "조원상 , Eugene (HIGHBRID) , O.YEON , 최영훈 "
+        }
+      ]
     }
   ]
 }
