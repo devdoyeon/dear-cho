@@ -49,6 +49,11 @@
       "title": "Merry-Go-Round",
       "artist": "PROJECT 7",
       "parts": ["작곡", "작사"]
+    },
+    {
+      "title": "Merry-Go-Round",
+      "artist": "HEBI",
+      "parts": ["작곡", "작사", "편곡"]
     }
   ]
 }
