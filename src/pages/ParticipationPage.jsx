@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import participationBg from 'images/participationBg.jpeg'
+import participationBg from 'images/participationBg.jpg'
 import $ from 'jquery'
 import ParticipatedSongModal from 'components/ParticipatedSongModal'
 import ListWrap from 'components/ListWrap'
