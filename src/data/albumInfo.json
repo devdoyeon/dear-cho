@@ -506,15 +506,50 @@
     },
     {
       "albumType": "6th Mini Album",
-      "albumName": "잠깨",
-      "release": "2025/03/27",
+      "albumName": "와장창",
+      "release": "2025/04/23",
       "tracklist": [
         {
           "lead": true,
           "title": "잠깨",
           "lyrics": "조원상",
-          "compose": "조원상, Eugene (HIGHBRID), O.YEON, 최영훈 ",
-          "arrange": "조원상, Eugene (HIGHBRID), O.YEON, 최영훈 "
+          "compose": "조원상, Eugene (HIGHBRID), O.YEON, 최영훈",
+          "arrange": "조원상, Eugene (HIGHBRID), O.YEON, 최영훈"
+        },
+        {
+          "lead": true,
+          "title": "하마",
+          "lyrics": "조원상",
+          "compose": "조원상, T-lack (HIGHBRID), O.YEON, 최영훈",
+          "arrange": "조원상, T-lack (HIGHBRID), O.YEON, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "내가 더",
+          "lyrics": "조원상",
+          "compose": "조원상, T-lack (HIGHBRID), O.YEON, 최영훈",
+          "arrange": "조원상, T-lack (HIGHBRID), O.YEON, 최영훈, Eugene (HIGHBRID), O.YEON, 최영훈 "
+        },
+        {
+          "lead": false,
+          "title": "뚝딱",
+          "lyrics": "조원상",
+          "compose": "조원상, T-lack (HIGHBRID), O.YEON, 최영훈, dohun",
+          "arrange": "조원상, T-lack (HIGHBRID), O.YEON, 최영훈, dohun"
+        },
+        {
+          "lead": false,
+          "title": "미워하지 않아도 될 수많은 이유",
+          "lyrics": "조원상",
+          "compose": "조원상, dohun, T-lack (HIGHBRID), O.YEON, 최영훈",
+          "arrange": "조원상, T-lack (HIGHBRID), O.YEON, 최영훈, dohun"
+        },
+        {
+          "lead": false,
+          "title": "bleu",
+          "lyrics": "최상엽",
+          "compose": "최상엽",
+          "arrange": "최상엽"
         }
       ]
     }
