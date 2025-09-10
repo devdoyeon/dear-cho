@@ -51,9 +51,29 @@
       "parts": ["작곡", "작사"]
     },
     {
-      "title": "늘",
-      "artist": "HEBI",
-      "parts": ["작곡", "작사", "편곡"]
+      "title": "늘 (EVER)",
+      "artist": "Hebi.",
+      "parts": ["작사", "작곡", "편곡", "베이스"]
+    },
+    {
+      "title": "지금부터 (Onward)",
+      "artist": "Hebi.",
+      "parts": ["작사", "작곡", "편곡", "베이스"]
+    },
+    {
+      "title": "쏟아져오는 바람처럼 눈부시게 너란 빛이 비추더라 (Be My Light)",
+      "artist": "도영",
+      "parts": ["작사"]
+    },
+    {
+      "title": "꽃의 바램",
+      "artist": "Hebi.",
+      "parts": ["작사", "작곡"]
+    },
+    {
+      "title": "60.1.2.0",
+      "artist": "강남",
+      "parts": ["작사", "작곡", "편곡"]
     }
   ]
 }
