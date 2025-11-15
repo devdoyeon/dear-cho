@@ -19,6 +19,7 @@ import partSong11 from 'images/participatedAlbumCover/11.jpg'
 import partSong12 from 'images/participatedAlbumCover/12.jpg'
 import partSong13 from 'images/participatedAlbumCover/13.jpg'
 import partSong14 from 'images/participatedAlbumCover/14.jpg'
+import partSong15 from 'images/participatedAlbumCover/15.jpg'
 
 const ParticipationPage = ({ scrollY }) => {
   const [modalToggle, setModalToggle] = useState(false)
@@ -39,7 +40,8 @@ const ParticipationPage = ({ scrollY }) => {
     partSong11,
     partSong12,
     partSong13,
-    partSong14
+    partSong14,
+    partSong15,
   ]
 
   const renderParticipatedAlbumList = () => {
@@ -71,7 +73,10 @@ const ParticipationPage = ({ scrollY }) => {
       $('.participation-title').offset().top - (window.innerHeight - 200)
     )
       $('.participation-title').addClass('animate')
-    if (scrollY > $('.participated-song-wrap').offset().top - (window.innerHeight - 200))
+    if (
+      scrollY >
+      $('.participated-song-wrap').offset().top - (window.innerHeight - 200)
+    )
       $('.participated-song-wrap').addClass('animate')
   }, [scrollY])
 
