@@ -552,6 +552,41 @@
           "arrange": "최상엽"
         }
       ]
+    },
+    {
+      "albumType": "7th Mini Album",
+      "albumName": "선",
+      "release": "2025/10/30",
+      "tracklist": [
+        {
+          "lead": true,
+          "title": "사랑은 어쩌고",
+          "lyrics": "조원상, 이도훈",
+          "compose": "조원상, 이도훈, EUGENE (HIGHBRID), O.YEON, 최영훈, DINT (HIGHBRID)",
+          "arrange": "조원상, 이도훈, EUGENE (HIGHBRID), O.YEON, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "EIO",
+          "lyrics": "조원상, 이도훈",
+          "compose": "조원상, EUGENE (HIGHBRID), 최영훈, O.YEON, 이도훈, 이재호",
+          "arrange": "조원상, EUGENE (HIGHBRID), 최영훈, O.YEON, 이도훈, 이재호"
+        },
+        {
+          "lead": true,
+          "title": "다급해져 (Feat. 원슈타인)",
+          "lyrics": "조원상, 이도훈, 원슈타인",
+          "compose": "조원상, O.YEON, 최영훈, 이도훈, EUGENE (HIGHBRID), 원슈타인",
+          "arrange": "조원상, 이도훈, EUGENE (HIGHBRID), O.YEON, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "사랑한 영원",
+          "lyrics": "신예찬",
+          "compose": "신예찬, O.YEON",
+          "arrange": "O.YEON, 신예찬, 박지환"
+        }
+      ]
     }
   ]
 }

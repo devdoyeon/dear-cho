@@ -18,6 +18,7 @@ import album10 from "images/albumCover/10.jpg";
 import album11 from "images/albumCover/11.jpg";
 import album12 from "images/albumCover/12.jpg"
 import album13 from "images/albumCover/13.jpg"
+import album14 from "images/albumCover/14.jpg"
 
 const AlbumPage = ({ scrollY }) => {
   const [modalToggle, setModalToggle] = useState(false);
@@ -37,7 +38,8 @@ const AlbumPage = ({ scrollY }) => {
     album10,
     album11,
     album12,
-    album13
+    album13,
+    album14
   ];
 
   const renderAlbumList = () => {
