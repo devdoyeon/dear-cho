@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.347f82ae.css",
-    "main.js": "/static/js/main.6addc1a3.js",
+    "main.js": "/static/js/main.43ac0ff8.js",
     "static/js/453.79f273f7.chunk.js": "/static/js/453.79f273f7.chunk.js",
     "static/media/4.jpg": "/static/media/4.791d618edbedb4960e56.jpg",
     "static/media/5.jpg": "/static/media/5.ced9882c35e5c05db13f.jpg",
@@ -31,6 +31,7 @@
     "static/media/albumBg.jpg": "/static/media/albumBg.8ed54110aa3fd3d3662e.jpg",
     "static/media/2.jpg": "/static/media/2.70088f70aa5f242fc8c9.jpg",
     "static/media/11.jpg": "/static/media/11.b246d35664dc02913180.jpg",
+    "static/media/16.jpg": "/static/media/16.4cebd3945d56ab283237.jpg",
     "static/media/sign.png": "/static/media/sign.ec3de661a2428e49c8ef.png",
     "static/media/dearcho.svg": "/static/media/dearcho.6999d10826adbb1d881a957ac7168eee.svg",
     "static/media/soundcloud.svg": "/static/media/soundcloud.5a2b99230c4134621048c1e012a435c8.svg",
@@ -43,11 +44,11 @@
     "static/media/youtube.svg": "/static/media/youtube.16cd0f62942023f753376ef24c70b441.svg",
     "static/media/scrollDown.svg": "/static/media/scrollDown.48cbc40cd124b03d13384d835e397fbf.svg",
     "main.347f82ae.css.map": "/static/css/main.347f82ae.css.map",
-    "main.6addc1a3.js.map": "/static/js/main.6addc1a3.js.map",
+    "main.43ac0ff8.js.map": "/static/js/main.43ac0ff8.js.map",
     "453.79f273f7.chunk.js.map": "/static/js/453.79f273f7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.347f82ae.css",
-    "static/js/main.6addc1a3.js"
+    "static/js/main.43ac0ff8.js"
   ]
 }
