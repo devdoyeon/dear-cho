@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import $ from 'jquery';
 import ListWrap from '../components/ListWrap';
 import snsInfo from 'data/snsInfo.json';
-import SnsImg from 'images/SnsBg.jpg';
+import SnsImg from 'images/SnsBg.png';
 import instagram from 'images/snsIcon/instagram.svg';
 import twitter from 'images/snsIcon/twitter.svg';
 import facebook from 'images/snsIcon/facebook.svg';

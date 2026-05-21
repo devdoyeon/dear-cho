@@ -395,14 +395,14 @@
           "title": "뜨거",
           "lyrics": "조원상, 이은송",
           "compose": "조원상, O.YEON, 최영훈",
-          "arrange": "조원상, O.YEON, 최영훈, T-lack(HIGHBRID)"
+          "arrange": "조원상, O.YEON, 최영훈, T-lack"
         },
         {
           "lead": true,
           "title": "아지랑이",
           "lyrics": "조원상, 이은송",
           "compose": "조원상, O.YEON, 최영훈, 이은송",
-          "arrange": "조원상, O.YEON, 최영훈, T-lack(HIGHBRID)"
+          "arrange": "조원상, O.YEON, 최영훈, T-lack"
         },
         {
           "lead": false,
@@ -416,7 +416,7 @@
           "title": "내버려",
           "lyrics": "조원상, 이은송",
           "compose": "조원상, O.YEON, 최영훈",
-          "arrange": "조원상, O.YEON, 최영훈, T-lack(HIGHBRID)"
+          "arrange": "조원상, O.YEON, 최영훈, T-lack"
         }
       ]
     },
@@ -429,15 +429,15 @@
           "lead": true,
           "title": "Boogie Man",
           "lyrics": "조원상",
-          "compose": "조원상, EUGENE(HIGHBRID), 최영훈",
-          "arrange": "조원상, EUGENE(HIGHBRID), 최영훈, DINT"
+          "compose": "조원상, EUGENE, 최영훈",
+          "arrange": "조원상, EUGENE, 최영훈, DINT"
         },
         {
           "lead": false,
           "title": "Over The Christmas",
           "lyrics": "조원상",
           "compose": "조원상, O.YEON, 최영훈",
-          "arrange": "조원상, O.YEON, 최영훈, EUGENE(HIGHBRID)"
+          "arrange": "조원상, O.YEON, 최영훈, EUGENE"
         }
       ]
     },
@@ -471,22 +471,22 @@
           "lead": true,
           "title": "빌런",
           "lyrics": "조원상",
-          "compose": "조원상, 최영훈, O.YEON, Eugene (HIGHBRID)",
-          "arrange": "조원상, 최영훈, O.YEON, Eugene (HIGHBRID)"
+          "compose": "조원상, 최영훈, O.YEON, Eugene ",
+          "arrange": "조원상, 최영훈, O.YEON, Eugene "
         },
         {
           "lead": true,
           "title": "못난이",
           "lyrics": "조원상",
-          "compose": "조원상, 최영훈, O.YEON, Eugene (HIGHBRID)",
-          "arrange": "조원상, 최영훈, O.YEON, Eugene (HIGHBRID)"
+          "compose": "조원상, 최영훈, O.YEON, Eugene ",
+          "arrange": "조원상, 최영훈, O.YEON, Eugene "
         },
         {
           "lead": false,
           "title": "도깨비춤",
           "lyrics": "조원상",
-          "compose": "조원상, 최영훈, O.YEON, Eugene (HIGHBRID)",
-          "arrange": "조원상, 최영훈, O.YEON, Eugene (HIGHBRID)"
+          "compose": "조원상, 최영훈, O.YEON, Eugene ",
+          "arrange": "조원상, 최영훈, O.YEON, Eugene "
         },
         {
           "lead": false,
@@ -513,36 +513,36 @@
           "lead": true,
           "title": "잠깨",
           "lyrics": "조원상",
-          "compose": "조원상, Eugene (HIGHBRID), O.YEON, 최영훈",
-          "arrange": "조원상, Eugene (HIGHBRID), O.YEON, 최영훈"
+          "compose": "조원상, Eugene , O.YEON, 최영훈",
+          "arrange": "조원상, Eugene , O.YEON, 최영훈"
         },
         {
           "lead": true,
           "title": "하마",
           "lyrics": "조원상",
-          "compose": "조원상, T-lack (HIGHBRID), O.YEON, 최영훈",
-          "arrange": "조원상, T-lack (HIGHBRID), O.YEON, 최영훈"
+          "compose": "조원상, T-lack , O.YEON, 최영훈",
+          "arrange": "조원상, T-lack , O.YEON, 최영훈"
         },
         {
           "lead": false,
           "title": "내가 더",
           "lyrics": "조원상",
-          "compose": "조원상, T-lack (HIGHBRID), O.YEON, 최영훈",
-          "arrange": "조원상, T-lack (HIGHBRID), O.YEON, 최영훈"
+          "compose": "조원상, T-lack , O.YEON, 최영훈",
+          "arrange": "조원상, T-lack , O.YEON, 최영훈"
         },
         {
           "lead": false,
           "title": "뚝딱",
           "lyrics": "조원상",
-          "compose": "조원상, T-lack (HIGHBRID), O.YEON, 최영훈, dohun",
-          "arrange": "조원상, T-lack (HIGHBRID), O.YEON, 최영훈, dohun"
+          "compose": "조원상, T-lack , O.YEON, 최영훈, dohun",
+          "arrange": "조원상, T-lack , O.YEON, 최영훈, dohun"
         },
         {
           "lead": false,
           "title": "미워하지 않아도 될 수많은 이유",
           "lyrics": "조원상",
-          "compose": "조원상, dohun, T-lack (HIGHBRID), O.YEON, 최영훈",
-          "arrange": "조원상, T-lack (HIGHBRID), O.YEON, 최영훈, dohun"
+          "compose": "조원상, dohun, T-lack , O.YEON, 최영훈",
+          "arrange": "조원상, T-lack , O.YEON, 최영훈, dohun"
         },
         {
           "lead": false,
@@ -562,22 +562,141 @@
           "lead": true,
           "title": "사랑은 어쩌고",
           "lyrics": "조원상, 이도훈",
-          "compose": "조원상, 이도훈, EUGENE (HIGHBRID), O.YEON, 최영훈, DINT (HIGHBRID)",
-          "arrange": "조원상, 이도훈, EUGENE (HIGHBRID), O.YEON, 최영훈"
+          "compose": "조원상, 이도훈, EUGENE , O.YEON, 최영훈, DINT ",
+          "arrange": "조원상, 이도훈, EUGENE , O.YEON, 최영훈"
         },
         {
           "lead": false,
           "title": "EIO",
           "lyrics": "조원상, 이도훈",
-          "compose": "조원상, EUGENE (HIGHBRID), 최영훈, O.YEON, 이도훈, 이재호",
-          "arrange": "조원상, EUGENE (HIGHBRID), 최영훈, O.YEON, 이도훈, 이재호"
+          "compose": "조원상, EUGENE , 최영훈, O.YEON, 이도훈, 이재호",
+          "arrange": "조원상, EUGENE , 최영훈, O.YEON, 이도훈, 이재호"
         },
         {
           "lead": true,
           "title": "다급해져 (Feat. 원슈타인)",
           "lyrics": "조원상, 이도훈, 원슈타인",
-          "compose": "조원상, O.YEON, 최영훈, 이도훈, EUGENE (HIGHBRID), 원슈타인",
-          "arrange": "조원상, 이도훈, EUGENE (HIGHBRID), O.YEON, 최영훈"
+          "compose": "조원상, O.YEON, 최영훈, 이도훈, EUGENE , 원슈타인",
+          "arrange": "조원상, 이도훈, EUGENE , O.YEON, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "사랑한 영원",
+          "lyrics": "신예찬",
+          "compose": "신예찬, O.YEON",
+          "arrange": "O.YEON, 신예찬, 박지환"
+        }
+      ]
+    },
+    {
+      "albumType": "2nd Full Album",
+      "albumName": "Childish",
+      "release": "2026/04/29",
+      "tracklist": [
+        {
+          "lead": false,
+          "title": "발아",
+          "lyrics": "조원상",
+          "compose": "조원상, 이도훈, EUGENE, O.YEON, 최영훈, DINT",
+          "arrange": "조원상, 이도훈, EUGENE, O.YEON, 최영훈, DINT"
+        },
+        {
+          "lead": true,
+          "title": "전체관람가",
+          "lyrics": "조원상",
+          "compose": "조원상, EUGENE , 최영훈, O.YEON",
+          "arrange": "조원상, EUGENE , 최영훈, O.YEON"
+        },
+        {
+          "lead": false,
+          "title": "카멜레온",
+          "lyrics": "조원상, 이도훈, EUGENE, ",
+          "compose": "조원상, O.YEON, 최영훈, 이도훈, EUGENE, 이재호",
+          "arrange": "조원상, 이도훈, EUGENE, O.YEON, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "하마 (Childish ver.)",
+          "lyrics": "조원상",
+          "compose": "조원상, EUGENE, O.YEON, 최영훈",
+          "arrange": "조원상, EUGENE, O.YEON, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "사랑은 어쩌고 (Childish ver.)",
+          "lyrics": "조원상, 이도훈",
+          "compose": "조원상, 이도훈, EUGENE, O.YEON, 최영훈, DINT",
+          "arrange": "조원상, 이도훈, EUGENE, O.YEON, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "EIO (Childish ver.)",
+          "lyrics": "조원상, 이도훈",
+          "compose": "조원상, EUGENE, 최영훈, O.YEON, 이도훈, 이재호",
+          "arrange": "조원상, EUGENE, 최영훈, O.YEON, 이도훈, 이재호"
+        },
+        {
+          "lead": false,
+          "title": "Porch Light (Feat. 남제현)",
+          "lyrics": "조원상, 남제현",
+          "compose": "조원상, DINT, EUGENE, 최영훈, 이재호",
+          "arrange": "조원상, 최영훈, EUGENE, 이재호"
+        },
+        {
+          "lead": false,
+          "title": "bleu",
+          "lyrics": "최상엽",
+          "compose": "최상엽",
+          "arrange": "최상엽"
+        },
+        {
+          "lead": false,
+          "title": "Porch Light (Feat. 남제현)",
+          "lyrics": "조원상, 남제현",
+          "compose": "조원상, DINT, EUGENE, 최영훈, 이재호",
+          "arrange": "조원상, 최영훈, EUGENE, 이재호"
+        },
+        {
+          "lead": false,
+          "title": "미워하지 않아도 될 수많은 이유 (Childish ver.)",
+          "lyrics": "조원상",
+          "compose": "조원상, EUGENE, O.YEON, 최영훈, 이도훈",
+          "arrange": "조원상, EUGENE, O.YEON, 최영훈, 이도훈"
+        },
+        {
+          "lead": false,
+          "title": "구구절절",
+          "lyrics": "신광일",
+          "compose": "신광일",
+          "arrange": "강버터"
+        },
+        {
+          "lead": false,
+          "title": "잠깨 (Childish ver.)",
+          "lyrics": "조원상",
+          "compose": "조원상, EUGENE, O.YEON, 최영훈",
+          "arrange": "조원상, EUGENE, O.YEON, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "다급해져 (Feat. 원슈타인) (Childish ver.)",
+          "lyrics": "조원상, 이도훈, 원슈타인",
+          "compose": "조원상, O.YEON, 최영훈, 이도훈, EUGENE , 원슈타인",
+          "arrange": "조원상, 이도훈, EUGENE , O.YEON, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "뚝딱 (Childish ver.)",
+          "lyrics": "조원상",
+          "compose": "조원상, 이도훈, EUGENE, O.YEON, 최영훈",
+          "arrange": "조원상, 이도훈, EUGENE, O.YEON, 최영훈"
+        },
+        {
+          "lead": false,
+          "title": "내가 더 (Childish ver.)",
+          "lyrics": "조원상",
+          "compose": "조원상, EUGENE, O.YEON, 최영훈",
+          "arrange": "조원상, EUGENE, O.YEON, 최영훈"
         },
         {
           "lead": false,
