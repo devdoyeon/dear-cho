@@ -1,7 +1,10 @@
 import { useEffect } from 'react'
 import participatedSongInfo from 'data/participatedSongInfo.json'
+import { useLanguage } from 'context/LanguageContext'
 
 const ParticipatedSongModal = ({ imgInfo, modalToggle, setModalToggle }) => {
+  const { t } = useLanguage()
+
   useEffect(() => {
     if (modalToggle) document.body.style.overflow = 'hidden'
     return () => (document.body.style.overflow = 'auto')
@@ -25,7 +28,8 @@ const ParticipatedSongModal = ({ imgInfo, modalToggle, setModalToggle }) => {
             </span>
             <br />
             <span className='parts'>
-              <b>Parts of</b> {songDetail?.parts.join(', ')}
+              <b>Parts of</b>{' '}
+              {songDetail?.parts.map(part => t.parts[part] || part).join(', ')}
             </span>
           </div>
           {/*<div className='column song-list'>{renderSongList()}</div>*/}

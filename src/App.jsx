@@ -4,10 +4,13 @@ import MainPage from 'pages/MainPage'
 import IntroducePage from 'pages/IntroducePage'
 import AlbumPage from 'pages/AlbumPage'
 import ParticipationPage from './pages/ParticipationPage'
+import OstPage from './pages/OstPage'
 import YoutubePage from 'pages/YoutubePage'
 import SoundCloudPage from './pages/SoundCloudPage'
 import SnsPage from './pages/SnsPage'
 import Footer from './components/Footer'
+import LanguageToggle from './components/LanguageToggle'
+import { LanguageProvider } from './context/LanguageContext'
 import './App.css'
 
 function App() {
@@ -34,17 +37,21 @@ function App() {
   }, [scrollY])
 
   return (
-    <div className='App'>
-      <Navigator toggle={toggle} />
-      <MainPage />
-      <IntroducePage scrollY={scrollY} />
-      <AlbumPage scrollY={scrollY} />
-      <ParticipationPage scrollY={scrollY} />
-      <YoutubePage scrollY={scrollY} />
-      <SoundCloudPage scrollY={scrollY} />
-      <SnsPage scrollY={scrollY} />
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className='App'>
+        <LanguageToggle />
+        <Navigator toggle={toggle} />
+        <MainPage />
+        <IntroducePage scrollY={scrollY} />
+        <AlbumPage scrollY={scrollY} />
+        <ParticipationPage scrollY={scrollY} />
+        <OstPage scrollY={scrollY} />
+        <YoutubePage scrollY={scrollY} />
+        <SoundCloudPage scrollY={scrollY} />
+        <SnsPage scrollY={scrollY} />
+        <Footer />
+      </div>
+    </LanguageProvider>
   )
 }
 

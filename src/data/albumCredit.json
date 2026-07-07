@@ -1,0 +1,686 @@
+{
+  "DEAR.": {
+    "spotifyId": "4f4E2S0S3Zq5XULNKyxvCm",
+    "albumType": "1st Single Album",
+    "tracks": [
+      {
+        "title": "INTRO",
+        "lead": false,
+        "lyrics": "",
+        "compose": "조원상, O.YEON",
+        "arrange": "조원상, 신예찬, 최상엽, 신광일, O.YEON"
+      },
+      {
+        "title": "개화",
+        "lead": true,
+        "lyrics": "조원상, 최상엽",
+        "compose": "조원상, O.YEON",
+        "arrange": "조원상, 신예찬, 최상엽, 신광일, O.YEON"
+      }
+    ]
+  },
+  "PANORAMA": {
+    "spotifyId": "5yU677I5zwrEbAfJUNQbyI",
+    "albumType": "1st Mini Album",
+    "tracks": [
+      {
+        "title": "조깅",
+        "lead": true,
+        "lyrics": "조원상, 신예찬, 최상엽",
+        "compose": "조원상",
+        "arrange": "조원상, O.YEON, 박지환"
+      },
+      {
+        "title": "수박깨러가",
+        "lead": false,
+        "lyrics": "조원상, 최상엽",
+        "compose": "조원상",
+        "arrange": "조원상, O.YEON, 박지환"
+      },
+      {
+        "title": "Straight Line",
+        "lead": false,
+        "lyrics": "조원상, 최상엽, 벤지",
+        "compose": "조원상",
+        "arrange": "조원상, O.YEON, 박지환"
+      },
+      {
+        "title": "Missing Call (Feat. 수란)",
+        "lead": false,
+        "lyrics": "조원상, 최상엽",
+        "compose": "조원상",
+        "arrange": "조원상, O.YEON, 박지환"
+      },
+      {
+        "title": "충분히",
+        "lead": false,
+        "lyrics": "신광일",
+        "compose": "신광일",
+        "arrange": "조원상, O.YEON"
+      },
+      {
+        "title": "Flare",
+        "lead": false,
+        "lyrics": "조원상, 신예찬, 이주혁, 신광일",
+        "compose": "조원상, 신예찬, 이주혁, 신광일",
+        "arrange": "조원상, 신예찬, 이주혁, 신광일, O.YEON"
+      }
+    ]
+  },
+  "선잠": {
+    "spotifyId": "54IoywYuMAnu6C50mb0YR0",
+    "albumType": "2nd Single Album",
+    "tracks": [
+      {
+        "title": "선잠",
+        "lead": true,
+        "lyrics": "조원상, 신예찬, 이주혁, 신광일",
+        "compose": "조원상, 신예찬, 이주혁, 신광일",
+        "arrange": "조원상, 신예찬, 이주혁, 신광일, O.YEON, 박지환"
+      },
+      {
+        "title": "Farther and Farther",
+        "lead": false,
+        "lyrics": "조원상, 최상엽",
+        "compose": "조원상, O.YEON, 신예찬",
+        "arrange": "조원상, O.YEON, 박지환"
+      }
+    ]
+  },
+  "INSIDE": {
+    "spotifyId": "5CBLXresvf69JUSU9TsR0r",
+    "albumType": "3rd Single Album",
+    "tracks": [
+      {
+        "title": "히어로",
+        "lead": true,
+        "lyrics": "조원상, 신예찬, 최상엽",
+        "compose": "조원상, O.YEON",
+        "arrange": "조원상, 신예찬, 최상엽, 신광일, O.YEON"
+      },
+      {
+        "title": "난로",
+        "lead": false,
+        "lyrics": "조원상, 신예찬, 최상엽, 신광일",
+        "compose": "조원상, O.YEON",
+        "arrange": "조원상, 신예찬, 최상엽, 신광일, O.YEON, 박지환"
+      },
+      {
+        "title": "OUTRO",
+        "lead": false,
+        "lyrics": "",
+        "compose": "조원상, O.YEON",
+        "arrange": "조원상, 신예찬, O.YEON"
+      }
+    ]
+  },
+  "Gatcha!": {
+    "spotifyId": "4kSvr6vVAIDg95iwXvAR0U",
+    "albumType": "4th Single Album",
+    "tracks": [
+      {
+        "title": "I Got U",
+        "lead": true,
+        "lyrics": "조원상, 최상엽, 홍이삭",
+        "compose": "조원상, O.YEON, 최영훈",
+        "arrange": "조원상, 신예찬, 최상엽, 신광일, O.YEON, 최영훈, 박지환"
+      },
+      {
+        "title": "One by One",
+        "lead": false,
+        "lyrics": "조원상, 최상엽, 홍이삭",
+        "compose": "조원상, O.YEON, 최영훈",
+        "arrange": "조원상, O.YEON, 최영훈, 박지환"
+      },
+      {
+        "title": "Buddy",
+        "lead": false,
+        "lyrics": "조원상, 최상엽, 홍이삭",
+        "compose": "조원상, O.YEON, 최영훈",
+        "arrange": "조원상, O.YEON, 최영훈, 박지환"
+      },
+      {
+        "title": "봄인지 여름인지",
+        "lead": false,
+        "lyrics": "신예찬, 최상엽, 신광일, 이재준",
+        "compose": "신광일, Add Blessed, Subbie",
+        "arrange": "신광일, Add Blessed"
+      }
+    ]
+  },
+  "동문서답": {
+    "spotifyId": "4aZJekjPholCTs8X67A829",
+    "albumType": "Digital Single Album",
+    "tracks": [
+      {
+        "title": "동문서답",
+        "lead": true,
+        "lyrics": "조원상, 최상엽",
+        "compose": "조원상, O.YEON, 최영훈, 박지환",
+        "arrange": "조원상, 신예찬, 최상엽, 신광일, O.YEON, 최영훈, 박지환"
+      },
+      {
+        "title": "동문서답 (Inst.)",
+        "lead": false,
+        "lyrics": "",
+        "compose": "조원상, O.YEON, 최영훈, 박지환",
+        "arrange": "조원상, 신예찬, 최상엽, 신광일, O.YEON, 최영훈, 박지환"
+      }
+    ]
+  },
+  "BLUE": {
+    "spotifyId": "7wEUEfMl0BehZk2igVxxiG",
+    "albumType": "2nd Mini Album",
+    "tracks": [
+      {
+        "title": "떼굴떼굴",
+        "lead": true,
+        "lyrics": "조원상",
+        "compose": "조원상, 최영훈, O.YEON",
+        "arrange": "조원상, 최영훈, O.YEON, 박지환"
+      },
+      {
+        "title": "맞네",
+        "lead": false,
+        "lyrics": "조원상, 예준",
+        "compose": "조원상, 최영훈",
+        "arrange": "조원상, 최영훈, 박지환"
+      },
+      {
+        "title": "해가 뜨는 밤",
+        "lead": false,
+        "lyrics": "최상엽",
+        "compose": "최상엽",
+        "arrange": "최상엽"
+      },
+      {
+        "title": "꿈",
+        "lead": false,
+        "lyrics": "신예찬",
+        "compose": "신예찬",
+        "arrange": "신예찬, 최상엽"
+      },
+      {
+        "title": "놓지 않을게",
+        "lead": false,
+        "lyrics": "신광일",
+        "compose": "신광일",
+        "arrange": "신광일"
+      },
+      {
+        "title": "결국 아무것도 알 수 없었지만",
+        "lead": false,
+        "lyrics": "조원상, 서정아",
+        "compose": "조원상, 최영훈, O.YEON",
+        "arrange": "조원상, 최영훈, O.YEON, 박지환"
+      }
+    ]
+  },
+  "Childhood": {
+    "spotifyId": "30fqL9OM6XKoKgrXL0AuB1",
+    "albumType": "1st Studio Album",
+    "tracks": [
+      {
+        "title": "Knowhow",
+        "lead": false,
+        "lyrics": "조원상, 이은송",
+        "compose": "조원상, 최영훈, BYMORE",
+        "arrange": "조원상, 최영훈, BYMORE, 박지환"
+      },
+      {
+        "title": "MP3",
+        "lead": false,
+        "lyrics": "조원상, 이은송",
+        "compose": "조원상, 이은송, 서예은",
+        "arrange": "조원상, O.YEON, 최영훈"
+      },
+      {
+        "title": "놀이",
+        "lead": true,
+        "lyrics": "조원상, 이은송",
+        "compose": "조원상",
+        "arrange": "조원상, O.YEON, 최영훈"
+      },
+      {
+        "title": "10sec",
+        "lead": false,
+        "lyrics": "조원상",
+        "compose": "조원상",
+        "arrange": "조원상, O.YEON, 최영훈"
+      },
+      {
+        "title": "넌 혹시, 난 괜히",
+        "lead": false,
+        "lyrics": "조원상, 이은송",
+        "compose": "조원상, 이은송",
+        "arrange": "조원상, 이은송, BYMORE, 최영훈"
+      },
+      {
+        "title": "Domino (feat. 디핵)",
+        "lead": false,
+        "lyrics": "조원상, 디핵, 이은송",
+        "compose": "조원상, 디핵, 이은송",
+        "arrange": "조원상, 이은송, 서예은"
+      },
+      {
+        "title": "파울",
+        "lead": false,
+        "lyrics": "조원상",
+        "compose": "조원상, 최영훈",
+        "arrange": "조원상, 최영훈, O.YEON"
+      },
+      {
+        "title": "내 쓸쓸함은 차갑지 않아요",
+        "lead": false,
+        "lyrics": "신예찬",
+        "compose": "신예찬",
+        "arrange": "최상엽, 최영훈, 신예찬"
+      },
+      {
+        "title": "이미 다 알고 있었지만",
+        "lead": false,
+        "lyrics": "조원상, 이은송",
+        "compose": "조원상, 이은송, 서예은",
+        "arrange": "조원상, O.YEON, 최영훈, BYMORE"
+      },
+      {
+        "title": "이 밤을 잊지 말아요",
+        "lead": false,
+        "lyrics": "신광일",
+        "compose": "신광일, 안소현",
+        "arrange": "신광일, 안소현"
+      },
+      {
+        "title": "무색 (無色)",
+        "lead": false,
+        "lyrics": "최상엽",
+        "compose": "최상엽",
+        "arrange": "최상엽"
+      },
+      {
+        "title": "Opening",
+        "lead": false,
+        "lyrics": "조원상, 이은송",
+        "compose": "조원상, O.YEON, 최영훈",
+        "arrange": "조원상, O.YEON, 최영훈"
+      },
+      {
+        "title": "Ending",
+        "lead": false,
+        "lyrics": "조원상, 이은송",
+        "compose": "조원상, O.YEON, 최영훈",
+        "arrange": "조원상, O.YEON, 최영훈"
+      },
+      {
+        "title": "We will fly away (feat. 송은혜)",
+        "lead": false,
+        "lyrics": "신광일, 신예찬",
+        "compose": "신광일, Add Blessed",
+        "arrange": "신광일, Add Blessed, 신예찬"
+      },
+      {
+        "title": "나는 너야",
+        "lead": false,
+        "lyrics": "최상엽, 조원상, 신광일, 신예찬",
+        "compose": "최상엽, 조원상, 신광일, 신예찬",
+        "arrange": "최상엽"
+      }
+    ]
+  },
+  "INSERT COIN": {
+    "spotifyId": "7AwuwwC2J7EDdPvVRmSEOP",
+    "albumType": "3rd Mini Album",
+    "tracks": [
+      {
+        "title": "아니 근데 진짜",
+        "lead": true,
+        "lyrics": "조원상",
+        "compose": "조원상, O.YEON, 최영훈",
+        "arrange": "조원상, O.YEON, 최영훈"
+      },
+      {
+        "title": "바쁘거든",
+        "lead": false,
+        "lyrics": "조원상",
+        "compose": "조원상, 김진솔, 최영훈",
+        "arrange": "조원상, 김진솔, 최영훈"
+      },
+      {
+        "title": "Never in Vain",
+        "lead": false,
+        "lyrics": "조원상, 홍이삭, 황민재, 신서현",
+        "compose": "조원상, Add Blessed",
+        "arrange": "조원상, Add Blessed"
+      },
+      {
+        "title": "채워",
+        "lead": false,
+        "lyrics": "조원상, 황민재",
+        "compose": "조원상, O.YEON, 최영훈",
+        "arrange": "조원상, O.YEON, 최영훈"
+      },
+      {
+        "title": "아니 근데 진짜 (Inst.)",
+        "lead": false,
+        "lyrics": "",
+        "compose": "조원상, O.YEON, 최영훈",
+        "arrange": "조원상, O.YEON, 최영훈"
+      },
+      {
+        "title": "바쁘거든 (Inst.)",
+        "lead": false,
+        "lyrics": "",
+        "compose": "조원상, 김진솔, 최영훈",
+        "arrange": "조원상, 김진솔, 최영훈"
+      }
+    ]
+  },
+  "열": {
+    "spotifyId": "2GeNPUOlj4e2FEETl8PnnU",
+    "albumType": "4th Mini Album",
+    "tracks": [
+      {
+        "title": "뜨거",
+        "lead": false,
+        "lyrics": "조원상, 이은송",
+        "compose": "조원상, O.YEON, 최영훈",
+        "arrange": "조원상, O.YEON, 최영훈, T-lack"
+      },
+      {
+        "title": "아지랑이",
+        "lead": true,
+        "lyrics": "조원상, 이은송",
+        "compose": "조원상, O.YEON, 최영훈, 이은송",
+        "arrange": "조원상, O.YEON, 최영훈, T-lack"
+      },
+      {
+        "title": "Magic",
+        "lead": false,
+        "lyrics": "신광일",
+        "compose": "신광일, Add Blessed (NEWTYPE)",
+        "arrange": "신광일, Add Blessed (NEWTYPE)"
+      },
+      {
+        "title": "내버려",
+        "lead": false,
+        "lyrics": "조원상, 이은송",
+        "compose": "조원상, O.YEON, 최영훈",
+        "arrange": "조원상, O.YEON, 최영훈, T-lack"
+      }
+    ]
+  },
+  "Boogie Man": {
+    "spotifyId": "6vTjGsccKyNmYZW8obJVou",
+    "albumType": "6th Single Album",
+    "tracks": [
+      {
+        "title": "Boogie Man",
+        "lead": true,
+        "lyrics": "조원상",
+        "compose": "조원상, EUGENE, 최영훈",
+        "arrange": "조원상, EUGENE, 최영훈, DINT"
+      },
+      {
+        "title": "Over The Christmas",
+        "lead": false,
+        "lyrics": "조원상",
+        "compose": "조원상, O.YEON, 최영훈",
+        "arrange": "조원상, O.YEON, 최영훈, EUGENE"
+      }
+    ]
+  },
+  "못 죽는 기사와 비단 요람": {
+    "spotifyId": "2AuUWIKUhxvxoD2gS7Z2mG",
+    "albumType": "7th Single Album",
+    "tracks": [
+      {
+        "title": "못 죽는 기사와 비단 요람",
+        "lead": true,
+        "lyrics": "조원상",
+        "compose": "조원상, O.YEON, 최영훈",
+        "arrange": "조원상, O.YEON, 최영훈"
+      },
+      {
+        "title": "못 죽는 기사와 비단 요람 (Inst.)",
+        "lead": false,
+        "lyrics": "",
+        "compose": "조원상, O.YEON, 최영훈",
+        "arrange": "조원상, O.YEON, 최영훈"
+      }
+    ]
+  },
+  "FROM.": {
+    "spotifyId": "1lKM9Jx2NchU15TTLqTbMt",
+    "albumType": "5th Mini Album",
+    "tracks": [
+      {
+        "title": "빌런",
+        "lead": true,
+        "lyrics": "조원상",
+        "compose": "조원상, 최영훈, O.YEON, Eugene ",
+        "arrange": "조원상, 최영훈, O.YEON, Eugene "
+      },
+      {
+        "title": "못난이",
+        "lead": true,
+        "lyrics": "조원상",
+        "compose": "조원상, 최영훈, O.YEON, Eugene ",
+        "arrange": "조원상, 최영훈, O.YEON, Eugene "
+      },
+      {
+        "title": "도깨비춤",
+        "lead": false,
+        "lyrics": "조원상",
+        "compose": "조원상, 최영훈, O.YEON, Eugene ",
+        "arrange": "조원상, 최영훈, O.YEON, Eugene "
+      },
+      {
+        "title": "남김없이",
+        "lead": false,
+        "lyrics": "신광일",
+        "compose": "신광일, Add Blessed",
+        "arrange": "신광일, Add Blessed"
+      },
+      {
+        "title": "낙화",
+        "lead": false,
+        "lyrics": "조원상",
+        "compose": "조원상, 최영훈, O.YEON",
+        "arrange": "조원상, 최영훈, O.YEON"
+      }
+    ]
+  },
+  "와장창": {
+    "spotifyId": "2ktH2zzm2Jbu8Gq7ISN5oN",
+    "albumType": "6th Mini Album",
+    "tracks": [
+      {
+        "title": "잠깨",
+        "lead": true,
+        "lyrics": "조원상",
+        "compose": "조원상, Eugene , O.YEON, 최영훈",
+        "arrange": "조원상, Eugene , O.YEON, 최영훈"
+      },
+      {
+        "title": "하마",
+        "lead": true,
+        "lyrics": "조원상",
+        "compose": "조원상, T-lack , O.YEON, 최영훈",
+        "arrange": "조원상, T-lack , O.YEON, 최영훈"
+      },
+      {
+        "title": "내가 더",
+        "lead": false,
+        "lyrics": "조원상",
+        "compose": "조원상, T-lack , O.YEON, 최영훈",
+        "arrange": "조원상, T-lack , O.YEON, 최영훈"
+      },
+      {
+        "title": "뚝딱",
+        "lead": false,
+        "lyrics": "조원상",
+        "compose": "조원상, T-lack , O.YEON, 최영훈, dohun",
+        "arrange": "조원상, T-lack , O.YEON, 최영훈, dohun"
+      },
+      {
+        "title": "미워하지 않아도 될 수많은 이유",
+        "lead": false,
+        "lyrics": "조원상",
+        "compose": "조원상, dohun, T-lack , O.YEON, 최영훈",
+        "arrange": "조원상, T-lack , O.YEON, 최영훈, dohun"
+      },
+      {
+        "title": "bleu",
+        "lead": false,
+        "lyrics": "최상엽",
+        "compose": "최상엽",
+        "arrange": "최상엽"
+      }
+    ]
+  },
+  "선": {
+    "spotifyId": "3TwaF8hv5hgstxZTL0RGXK",
+    "albumType": "7th Mini Album",
+    "tracks": [
+      {
+        "title": "사랑은 어쩌고",
+        "lead": true,
+        "lyrics": "조원상, 이도훈",
+        "compose": "조원상, 이도훈, EUGENE , O.YEON, 최영훈, DINT ",
+        "arrange": "조원상, 이도훈, EUGENE , O.YEON, 최영훈"
+      },
+      {
+        "title": "EIO",
+        "lead": false,
+        "lyrics": "조원상, 이도훈",
+        "compose": "조원상, EUGENE , 최영훈, O.YEON, 이도훈, 이재호",
+        "arrange": "조원상, EUGENE , 최영훈, O.YEON, 이도훈, 이재호"
+      },
+      {
+        "title": "다급해져 (Feat. 원슈타인)",
+        "lead": true,
+        "lyrics": "조원상, 이도훈, 원슈타인",
+        "compose": "조원상, O.YEON, 최영훈, 이도훈, EUGENE , 원슈타인",
+        "arrange": "조원상, 이도훈, EUGENE , O.YEON, 최영훈"
+      },
+      {
+        "title": "사랑한 영원",
+        "lead": false,
+        "lyrics": "신예찬",
+        "compose": "신예찬, O.YEON",
+        "arrange": "O.YEON, 신예찬, 박지환"
+      }
+    ]
+  },
+  "Childish": {
+    "spotifyId": "7Hkl0TZIfl54wKGX9KQD5K",
+    "albumType": "2nd Full Album",
+    "tracks": [
+      {
+        "title": "발아",
+        "lead": false,
+        "lyrics": "조원상",
+        "compose": "조원상, 이도훈, EUGENE, O.YEON, 최영훈, DINT",
+        "arrange": "조원상, 이도훈, EUGENE, O.YEON, 최영훈, DINT"
+      },
+      {
+        "title": "전체관람가",
+        "lead": true,
+        "lyrics": "조원상",
+        "compose": "조원상, EUGENE , 최영훈, O.YEON",
+        "arrange": "조원상, EUGENE , 최영훈, O.YEON"
+      },
+      {
+        "title": "카멜레온",
+        "lead": false,
+        "lyrics": "조원상, 이도훈, EUGENE, ",
+        "compose": "조원상, O.YEON, 최영훈, 이도훈, EUGENE, 이재호",
+        "arrange": "조원상, 이도훈, EUGENE, O.YEON, 최영훈"
+      },
+      {
+        "title": "하마 (Childish ver.)",
+        "lead": false,
+        "lyrics": "조원상",
+        "compose": "조원상, EUGENE, O.YEON, 최영훈",
+        "arrange": "조원상, EUGENE, O.YEON, 최영훈"
+      },
+      {
+        "title": "사랑은 어쩌고 (Childish ver.)",
+        "lead": false,
+        "lyrics": "조원상, 이도훈",
+        "compose": "조원상, 이도훈, EUGENE, O.YEON, 최영훈, DINT",
+        "arrange": "조원상, 이도훈, EUGENE, O.YEON, 최영훈"
+      },
+      {
+        "title": "EIO (Childish ver.)",
+        "lead": false,
+        "lyrics": "조원상, 이도훈",
+        "compose": "조원상, EUGENE, 최영훈, O.YEON, 이도훈, 이재호",
+        "arrange": "조원상, EUGENE, 최영훈, O.YEON, 이도훈, 이재호"
+      },
+      {
+        "title": "Porch Light (Feat. 남제현)",
+        "lead": false,
+        "lyrics": "조원상, 남제현",
+        "compose": "조원상, DINT, EUGENE, 최영훈, 이재호",
+        "arrange": "조원상, 최영훈, EUGENE, 이재호"
+      },
+      {
+        "title": "bleu",
+        "lead": false,
+        "lyrics": "최상엽",
+        "compose": "최상엽",
+        "arrange": "최상엽"
+      },
+      {
+        "title": "미워하지 않아도 될 수많은 이유 (Childish ver.)",
+        "lead": false,
+        "lyrics": "조원상",
+        "compose": "조원상, EUGENE, O.YEON, 최영훈, 이도훈",
+        "arrange": "조원상, EUGENE, O.YEON, 최영훈, 이도훈"
+      },
+      {
+        "title": "구구절절",
+        "lead": false,
+        "lyrics": "신광일",
+        "compose": "신광일",
+        "arrange": "강버터"
+      },
+      {
+        "title": "잠깨 (Childish ver.)",
+        "lead": false,
+        "lyrics": "조원상",
+        "compose": "조원상, EUGENE, O.YEON, 최영훈",
+        "arrange": "조원상, EUGENE, O.YEON, 최영훈"
+      },
+      {
+        "title": "다급해져 (Feat. 원슈타인) (Childish ver.)",
+        "lead": false,
+        "lyrics": "조원상, 이도훈, 원슈타인",
+        "compose": "조원상, O.YEON, 최영훈, 이도훈, EUGENE , 원슈타인",
+        "arrange": "조원상, 이도훈, EUGENE , O.YEON, 최영훈"
+      },
+      {
+        "title": "뚝딱 (Childish ver.)",
+        "lead": false,
+        "lyrics": "조원상",
+        "compose": "조원상, 이도훈, EUGENE, O.YEON, 최영훈",
+        "arrange": "조원상, 이도훈, EUGENE, O.YEON, 최영훈"
+      },
+      {
+        "title": "내가 더 (Childish ver.)",
+        "lead": false,
+        "lyrics": "조원상",
+        "compose": "조원상, EUGENE, O.YEON, 최영훈",
+        "arrange": "조원상, EUGENE, O.YEON, 최영훈"
+      },
+      {
+        "title": "사랑한 영원",
+        "lead": false,
+        "lyrics": "신예찬",
+        "compose": "신예찬, O.YEON",
+        "arrange": "O.YEON, 신예찬, 박지환"
+      }
+    ]
+  }
+}

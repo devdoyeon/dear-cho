@@ -9,6 +9,8 @@ import facebook from 'images/snsIcon/facebook.svg';
 import youtube from 'images/snsIcon/youtube.svg';
 import soundcloud from 'images/snsIcon/soundcloud.svg';
 
+const SNS_ICON = { instagram, twitter, facebook, youtube, soundcloud };
+
 const SnsPage = ({ scrollY }) => {
   useEffect(() => {
     if (scrollY > $('.sns-title').offset().top - (window.innerHeight - 200))
@@ -18,33 +20,21 @@ const SnsPage = ({ scrollY }) => {
   }, [scrollY]);
 
   const renderSNSInfo = () => {
-    return snsInfo?.information.map(
-      ({ type, name, link }) => {
-        return (
-          <a href={link} target='_blank' className='row card item'>
-            <img
-              src={
-                type === 'instagram'
-                  ? instagram
-                  : type === 'facebook'
-                    ? facebook
-                    : type === 'twitter'
-                      ? twitter
-                      : type === 'youtube'
-                        ? youtube
-                        : soundcloud
-              }
-              alt={`샘플`}
-            />
-            <div>
-              <h3>{type.toUpperCase()}</h3>
-              <p>@{name}</p>
-            </div>
-          </a>
-        );
-      },
-      <></>
-    );
+    return snsInfo?.information.map(({ type, name, link }, idx) => (
+      <a
+        key={idx}
+        href={link}
+        target='_blank'
+        rel='noopener noreferrer'
+        className='row card item'
+      >
+        <img src={SNS_ICON[type] || soundcloud} alt={type} />
+        <div>
+          <h3>{type.toUpperCase()}</h3>
+          <p>@{name}</p>
+        </div>
+      </a>
+    ));
   };
 
   return (

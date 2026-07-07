@@ -1,8 +1,11 @@
 import { useEffect } from "react";
 import $ from "jquery";
 import introBg from "images/introBg.jpg";
+import { useLanguage } from "context/LanguageContext";
 
 const IntroducePage = ({ scrollY }) => {
+  const { t } = useLanguage();
+
   useEffect(() => {
     if (scrollY > $(".info-title").offset().top - (window.innerHeight - 200))
       $(".info-title").addClass("animate");
@@ -16,24 +19,24 @@ const IntroducePage = ({ scrollY }) => {
       <img src={introBg} alt="메인이미지" className="introduceBg pageImg" />
       <div className="column info-box">
         <div className="row">
-          <span>이름</span>
-          <h4>조원상</h4>
+          <span>{t.introLabels.name}</span>
+          <h4>{t.introValues.name}</h4>
         </div>
         <div className="row">
-          <span>생년월일</span>
+          <span>{t.introLabels.birth}</span>
           <h4>1996.08.15</h4>
         </div>
         <div className="row">
-          <span>소속사</span>
+          <span>{t.introLabels.agency}</span>
           <h4>MYSTIC STORY</h4>
         </div>
         <div className="row">
-          <span>소속 그룹</span>
+          <span>{t.introLabels.group}</span>
           <h4>LUCY</h4>
         </div>
         <div className="row">
-          <span>포지션</span>
-          <h4>프로듀싱 & 베이스</h4>
+          <span>{t.introLabels.position}</span>
+          <h4>{t.introValues.position}</h4>
         </div>
       </div>
     </div>

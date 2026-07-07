@@ -47,26 +47,20 @@ const ParticipationPage = ({ scrollY }) => {
   ]
 
   const renderParticipatedAlbumList = () => {
-    return partSongArr.map((albumCover, idx) => {
-      return (
-        <>
-          <img
-            src={albumCover}
-            alt={idx}
-            className='item album-cover'
-            onClick={() => {
-              setImgInfo(prev => {
-                const clone = { ...prev }
-                clone.img = albumCover
-                clone.idx = idx
-                return clone
-              })
-              setModalToggle(true)
-            }}
-          />
-        </>
-      )
-    })
+    return partSongArr.map((albumCover, idx) => (
+      <img
+        key={idx}
+        src={albumCover}
+        alt={`participated-${idx}`}
+        className='item album-cover'
+        loading='lazy'
+        decoding='async'
+        onClick={() => {
+          setImgInfo({ img: albumCover, idx })
+          setModalToggle(true)
+        }}
+      />
+    ))
   }
 
   useEffect(() => {
