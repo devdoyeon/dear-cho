@@ -13,8 +13,8 @@ const ParticipatedSongModal = ({ imgInfo, modalToggle, setModalToggle }) => {
   const songDetail = participatedSongInfo.information[imgInfo?.idx]
 
   return (
-    <div className='album-modal-bg'>
-      <div className='album-modal'>
+    <div className='album-modal-bg' onClick={() => setModalToggle(false)}>
+      <div className='album-modal' onClick={e => e.stopPropagation()}>
         <img src={imgInfo?.img} alt='앨범 커버' className='album-modal-cover' />
         <div className='album-modal-content participated column'>
           <button className='closeBtn' onClick={() => setModalToggle(false)}>

@@ -11,6 +11,9 @@
 # production
 /build
 
+# fonts (Pretendard는 CDN으로 로드)
+/src/styles/fonts/
+
 # misc
 .DS_Store
 .env

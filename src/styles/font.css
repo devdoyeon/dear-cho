@@ -1,24 +1,28 @@
+/* 폰트: Pretendard (jsDelivr CDN, static woff2). 커스텀 이름은 굵기별 식별자이며 실제 쓰는 굵기만 로드된다. */
 @font-face {
-  font-family: 'NotoSansM';
-  src: url('fonts/NotoSansKR-Medium.otf') format('opentype');
+  font-family: 'PretendardThin';
+  src: url('https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/woff2/Pretendard-Thin.woff2')
+    format('woff2');
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'NotoSansB';
-  src: url('fonts/NotoSansKR-Bold.otf') format('opentype');
+  font-family: 'PretendardRegular';
+  src: url('https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/woff2/Pretendard-Regular.woff2')
+    format('woff2');
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'NotoSansR';
-  src: url('fonts/NotoSansKR-Regular.otf') format('opentype');
+  font-family: 'PretendardBold';
+  src: url('https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/woff2/Pretendard-Bold.woff2')
+    format('woff2');
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'NotoSansT';
-  src: url('fonts/NotoSansKR-Thin.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'NotoSansBlack';
-  src: url('fonts/NotoSansKR-Black.otf') format('opentype');
+  font-family: 'PretendardBlack';
+  src: url('https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/woff2/Pretendard-Black.woff2')
+    format('woff2');
+  font-display: swap;
 }

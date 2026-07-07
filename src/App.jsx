@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Navigator from 'components/Navigator'
 import MainPage from 'pages/MainPage'
 import IntroducePage from 'pages/IntroducePage'
+import StatsPage from './pages/StatsPage'
 import AlbumPage from 'pages/AlbumPage'
 import ParticipationPage from './pages/ParticipationPage'
 import OstPage from './pages/OstPage'
@@ -10,6 +11,7 @@ import SoundCloudPage from './pages/SoundCloudPage'
 import SnsPage from './pages/SnsPage'
 import Footer from './components/Footer'
 import LanguageToggle from './components/LanguageToggle'
+import NewAlbumModal from './components/NewAlbumModal'
 import { LanguageProvider } from './context/LanguageContext'
 import './App.css'
 
@@ -39,10 +41,12 @@ function App() {
   return (
     <LanguageProvider>
       <div className='App'>
+        <NewAlbumModal />
         <LanguageToggle />
         <Navigator toggle={toggle} />
         <MainPage />
         <IntroducePage scrollY={scrollY} />
+        <StatsPage scrollY={scrollY} />
         <AlbumPage scrollY={scrollY} />
         <ParticipationPage scrollY={scrollY} />
         <OstPage scrollY={scrollY} />

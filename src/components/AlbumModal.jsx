@@ -76,8 +76,8 @@ const AlbumModal = ({ album, modalToggle, setModalToggle }) => {
   };
 
   return (
-    <div className="album-modal-bg">
-      <div className="album-modal">
+    <div className="album-modal-bg" onClick={() => setModalToggle(false)}>
+      <div className="album-modal" onClick={e => e.stopPropagation()}>
         <img src={album?.cover} alt="앨범 커버" className="album-modal-cover" />
         <div className="album-modal-content">
           <button className="closeBtn" onClick={() => setModalToggle(false)}>
@@ -89,6 +89,15 @@ const AlbumModal = ({ album, modalToggle, setModalToggle }) => {
             {album?.release?.replaceAll("/", ".")} Released
           </span>
           {renderStreamingLinks()}
+          {album?.spotifyId && (
+            <iframe
+              className="spotify-embed"
+              src={`https://open.spotify.com/embed/album/${album.spotifyId}?theme=0`}
+              title="Spotify player"
+              loading="lazy"
+              allow="encrypted-media"
+            ></iframe>
+          )}
           <div className="column song-list">{renderSongList()}</div>
         </div>
       </div>
