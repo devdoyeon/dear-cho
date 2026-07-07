@@ -44,7 +44,7 @@
     z-index: 1;
     position: absolute;
     top: 100px;
-    font-family: $blackFont;
+    @include font-black;
     font-style: italic;
     font-size: 80px;
     opacity: 0;
@@ -92,7 +92,7 @@
         h4 {
           font-size: 60px;
           font-style: italic;
-          font-family: $boldFont;
+          @include font-bold;
           margin: 3px 0;
         }
       }
@@ -113,7 +113,7 @@
           div {
             margin-left: 20px;
             h3 {
-              font-family: $boldFont;
+              @include font-bold;
             }
             p {
               white-space: nowrap;
@@ -141,7 +141,7 @@
       bottom: 10px;
       left: 10px;
       font-size: 10px;
-      font-family: $thinFont;
+      @include font-thin;
     }
   }
 
@@ -168,16 +168,16 @@
       margin-right: 10px;
     }
     span {
-      font-family: $boldFont;
+      @include font-bold;
     }
     .mail {
       margin: 20px 0 40px;
     }
     p {
-      font-family: $thinFont;
+      @include font-thin;
       &.for {
         margin-top: 10px;
-        font-family: $regularFont;
+        @include font-regular;
       }
       &.copyright {
         color: #494949;
@@ -221,7 +221,7 @@
         position: absolute;
         top: 30px;
         right: 30px;
-        font-family: $blackFont;
+        @include font-black;
         padding: 5px 10px;
         font-size: 20px;
         border-radius: 20%;
@@ -232,12 +232,12 @@
         font-size: 13px;
       }
       .album-name {
-        font-family: $blackFont;
+        @include font-black;
         font-style: italic;
         margin-bottom: 5px;
       }
       .released-date {
-        font-family: $thinFont;
+        @include font-thin;
         font-size: 13px;
         margin-bottom: 30px;
       }
@@ -248,7 +248,7 @@
           width: 100%;
           span {
             &.lead {
-              font-family: $boldFont;
+              @include font-bold;
               font-size: 10px;
               background-color: white;
               color: black;
@@ -259,13 +259,13 @@
             &.song-title {
               display: inline-block;
               margin-bottom: 10px;
-              font-family: $boldFont;
+              @include font-bold;
             }
             &.lead-song {
               text-decoration: underline;
             }
             b {
-              font-family: $boldFont;
+              @include font-bold;
               font-size: 12px;
               font-style: italic;
             }
@@ -287,12 +287,12 @@
       &.participated {
         justify-content: center;
         .song-title {
-          font-family: $blackFont;
+          @include font-black;
           font-size: 25px;
           margin: 0 20px 30px 20px;
         }
         b {
-          font-family: $boldFont;
+          @include font-bold;
         }
       }
     }
@@ -309,7 +309,7 @@
     display: inline-block;
     width: 100%;
     text-align: center;
-    font-family: $blackFont;
+    @include font-black;
     color: rgba(0, 0, 0, 0);
     -webkit-text-stroke: 1px white;
     margin-bottom: 20px;
@@ -338,7 +338,7 @@
     margin-top: 20px;
     .scroll-btn {
       padding: 0 60px;
-      font-family: $blackFont;
+      @include font-black;
       font-size: 40px;
       color: rgba(0, 0, 0, 0);
       -webkit-text-stroke: 1px white;
@@ -599,6 +599,345 @@
           }
           .parts {
             font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.container {
+  &.stats-page {
+    .stats-grid {
+      flex-wrap: wrap;
+      gap: 30px 70px;
+      z-index: 1;
+      opacity: 0;
+      padding: 0 20px;
+
+      .stat-item {
+        @include flex-style(column);
+
+        .stat-num {
+          @include font-black;
+          font-style: italic;
+          font-size: 70px;
+          line-height: 1;
+        }
+
+        .stat-label {
+          @include font-thin;
+          font-size: 15px;
+          letter-spacing: 1px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}
+
+.promo-modal-bg {
+  @include flex-style(row, center, center);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 7;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.promo-modal {
+  @include flex-style(column, center, null);
+  position: relative;
+  width: 340px;
+  max-width: 85%;
+  padding: 40px 30px 30px;
+  background-color: #0a0a0a;
+  border: 2px solid white;
+  border-radius: 16px;
+
+  .promo-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 16px;
+    color: white;
+    background: none;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .promo-label {
+    @include font-black;
+    font-style: italic;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #1db954;
+    margin-bottom: 16px;
+  }
+
+  .promo-cover {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .promo-name {
+    @include font-black;
+    font-style: italic;
+    text-align: center;
+    margin: 18px 0 6px;
+  }
+
+  .promo-date {
+    @include font-thin;
+    font-size: 13px;
+    margin-bottom: 22px;
+  }
+
+  .promo-listen {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    @include font-bold;
+    color: black;
+    background-color: #1db954;
+    border-radius: 30px;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: #1ed760;
+    }
+  }
+}
+
+.lang-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 6;
+  padding: 7px 14px;
+  @include font-bold;
+  font-size: 14px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.list-wrap {
+  .list {
+    .album-item {
+      position: relative;
+      width: 200px;
+      margin-right: 50px;
+      cursor: pointer;
+      flex-shrink: 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .album-cover {
+        width: 100%;
+        display: block;
+        border-radius: 4px;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover {
+        .album-cover {
+          transform: translateY(-6px);
+        }
+      }
+    }
+
+    .ost-item {
+      position: relative;
+      @include flex-style(column);
+      width: 200px;
+      margin-right: 50px;
+      flex-shrink: 0;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .album-cover {
+        width: 100%;
+        display: block;
+        border-radius: 4px;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover {
+        .album-cover {
+          transform: translateY(-6px);
+        }
+      }
+
+      .ost-name {
+        margin-top: 12px;
+        font-size: 13px;
+        text-align: center;
+        word-break: keep-all;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.new-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 2;
+  padding: 3px 8px;
+  font-size: 12px;
+  @include font-bold;
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+.album-modal-bg {
+  .album-modal {
+    .album-modal-content {
+      &.ost {
+        justify-content: flex-start;
+        padding: 80px 25px 50px;
+
+        .album-name {
+          font-size: 20px;
+          line-height: 1.35;
+          text-align: center;
+          word-break: keep-all;
+          overflow-wrap: break-word;
+        }
+
+        .released-date {
+          margin-top: 8px;
+        }
+
+        .ost-listen {
+          margin-top: 24px;
+          padding: 12px 24px;
+          @include font-bold;
+          color: black;
+          background-color: #1db954;
+          border-radius: 30px;
+          transition: 0.2s;
+
+          &:hover {
+            background-color: #1ed760;
+          }
+        }
+      }
+
+      .spotify-embed {
+        width: 85%;
+        height: 352px;
+        border: 0;
+        border-radius: 12px;
+        margin-bottom: 30px;
+      }
+
+      .streaming-links {
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 30px;
+        padding: 0 20px;
+
+        .streaming-btn {
+          @include font-bold;
+          font-size: 12px;
+          padding: 6px 12px;
+          border: 1px solid white;
+          border-radius: 20px;
+          color: white;
+          white-space: nowrap;
+          transition: 0.2s;
+
+          &:hover {
+            background-color: white;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .container {
+    &.stats-page {
+      .stats-grid {
+        gap: 24px 40px;
+
+        .stat-item {
+          .stat-num {
+            font-size: 44px;
+          }
+
+          .stat-label {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .lang-toggle {
+    top: 12px;
+    left: 12px;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .list-wrap {
+    .list {
+      .album-item,
+      .ost-item {
+        width: 150px;
+        margin-right: 20px;
+      }
+
+      .ost-item {
+        .ost-name {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  .new-badge {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+
+  .album-modal-bg {
+    .album-modal {
+      .album-modal-content {
+        .spotify-embed {
+          height: 300px;
+        }
+
+        .streaming-links {
+          .streaming-btn {
+            font-size: 10px;
+            padding: 5px 10px;
           }
         }
       }

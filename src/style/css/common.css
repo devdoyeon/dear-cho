@@ -371,10 +371,12 @@
   overflow: auto;
   width: 100%;
   justify-content: flex-start;
-  scrollbar-width: none;
 }
 .list-wrap .list ::-webkit-scrollbar {
   display: none;
+}
+.list-wrap .list {
+  scrollbar-width: none;
 }
 .list-wrap .list .item {
   width: 200px;
@@ -865,5 +867,3 @@
     padding: 5px 10px;
   }
 }
-
-/*# sourceMappingURL=common.css.map */

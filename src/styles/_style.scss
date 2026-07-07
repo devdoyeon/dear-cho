@@ -1,8 +1,40 @@
-$blackFont: 'NotoSansBlack', '맑은 고딕', sans-serif;
-$boldFont: 'NotoSansB', '맑은 고딕', sans-serif;
-$middleFont: 'NotoSansM', '맑은 고딕', sans-serif;
-$regularFont: 'NotoSansR', '맑은 고딕', sans-serif;
-$thinFont: 'NotoSansT', '맑은 고딕', sans-serif;
+$pretendardFont: 'Pretendard Variable', '맑은 고딕', sans-serif;
+$blackFont: $pretendardFont;
+$boldFont: $pretendardFont;
+$middleFont: $pretendardFont;
+$regularFont: $pretendardFont;
+$thinFont: $pretendardFont;
+
+$blackWeight: 900;
+$boldWeight: 700;
+$middleWeight: 500;
+$regularWeight: 400;
+$thinWeight: 100;
+
+@mixin font-style($weight) {
+  font-family: $pretendardFont;
+  font-weight: $weight;
+}
+
+@mixin font-black {
+  @include font-style($blackWeight);
+}
+
+@mixin font-bold {
+  @include font-style($boldWeight);
+}
+
+@mixin font-middle {
+  @include font-style($middleWeight);
+}
+
+@mixin font-regular {
+  @include font-style($regularWeight);
+}
+
+@mixin font-thin {
+  @include font-style($thinWeight);
+}
 
 //= 분기점
 $breakpoint-wide-tablet: 1300px; //태블릿 가로
