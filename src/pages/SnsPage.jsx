@@ -1,6 +1,6 @@
 import ListWrap from '../components/ListWrap';
 import snsInfo from 'data/snsInfo.json';
-import SnsImg from 'images/SnsBg.png';
+import SnsImg from 'images/SnsBg.jpg';
 import instagram from 'images/snsIcon/instagram.svg';
 import twitter from 'images/snsIcon/twitter.svg';
 import facebook from 'images/snsIcon/facebook.svg';
@@ -37,7 +37,7 @@ const SnsPage = () => {
       <h2 ref={titleRef} className='title sns-title odd'>
         SNS & MEDIA
       </h2>
-      <img src={SnsImg} alt='SNS Page Image' className='pageImg' />
+      <img src={SnsImg} alt='SNS 배경' className='pageImg' />
       <ListWrap ref={wrapRef} renderListFn={renderSNSInfo} className='card-wrap' />
     </div>
   );
