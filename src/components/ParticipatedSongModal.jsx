@@ -1,26 +1,23 @@
-import { useEffect } from 'react'
 import participatedSongInfo from 'data/participatedSongInfo.json'
 import { useLanguage } from 'context/LanguageContext'
+import { useModalBehavior } from 'js/useModalBehavior'
 
 const ParticipatedSongModal = ({ imgInfo, modalToggle, setModalToggle }) => {
   const { t } = useLanguage()
-
-  useEffect(() => {
-    if (modalToggle) document.body.style.overflow = 'hidden'
-    return () => (document.body.style.overflow = 'auto')
-  }, [modalToggle])
-
-  useEffect(() => {
-    const onKey = e => e.key === 'Escape' && setModalToggle(false)
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
-  }, [setModalToggle])
+  const close = () => setModalToggle(false)
+  const containerRef = useModalBehavior(modalToggle, close)
 
   const songDetail = participatedSongInfo.information[imgInfo?.idx]
 
   return (
-    <div className='album-modal-bg' onClick={() => setModalToggle(false)}>
-      <div className='album-modal'>
+    <div className='album-modal-bg' onClick={close}>
+      <div
+        className='album-modal'
+        ref={containerRef}
+        role='dialog'
+        aria-modal='true'
+        aria-label={songDetail?.title}
+      >
         <img
           src={imgInfo?.img}
           alt='앨범 커버'
@@ -31,7 +28,7 @@ const ParticipatedSongModal = ({ imgInfo, modalToggle, setModalToggle }) => {
           className='album-modal-content participated column'
           onClick={e => e.stopPropagation()}
         >
-          <button className='closeBtn' onClick={() => setModalToggle(false)}>
+          <button className='closeBtn' aria-label='닫기' onClick={close}>
             ✖
           </button>
           <div className='song column'>
@@ -46,7 +43,6 @@ const ParticipatedSongModal = ({ imgInfo, modalToggle, setModalToggle }) => {
               {songDetail?.parts.map(part => t.parts[part] || part).join(', ')}
             </span>
           </div>
-          {/*<div className='column song-list'>{renderSongList()}</div>*/}
         </div>
       </div>
     </div>

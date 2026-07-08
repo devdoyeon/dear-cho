@@ -49,7 +49,7 @@ const StatsPage = () => {
       <h2 ref={titleRef} className='title stats-title even'>
         DISCOGRAPHY
       </h2>
-      <img src={discographyBg} alt='Discography Page Image' className='pageImg' />
+      <img src={discographyBg} alt='Discography 배경' className='pageImg' />
       <div ref={gridRef} className='row stats-grid'>
         {stats.map(({ num, label }) => (
           <div className='stat-item' key={label}>

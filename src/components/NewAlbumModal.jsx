@@ -5,6 +5,7 @@ import albumCredit from 'data/albumCredit.json'
 import albumData from 'data/albumData.json'
 import { buildAlbumList, isNewRelease } from 'js/albumUtils'
 import { useLanguage } from 'context/LanguageContext'
+import { useModalBehavior } from 'js/useModalBehavior'
 
 const STORAGE_KEY = 'dismissedAlbum'
 
@@ -25,29 +26,25 @@ const NewAlbumModal = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  useEffect(() => {
-    if (show) document.body.style.overflow = 'hidden'
-    return () => (document.body.style.overflow = 'auto')
-  }, [show])
-
   const close = () => {
     if (latest?.spotifyId) localStorage.setItem(STORAGE_KEY, latest.spotifyId)
     setShow(false)
   }
-
-  useEffect(() => {
-    const onKey = e => e.key === 'Escape' && close()
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  const containerRef = useModalBehavior(show, close)
 
   if (!show || !latest) return null
 
   return (
     <div className='promo-modal-bg' onClick={close}>
-      <div className='promo-modal' onClick={e => e.stopPropagation()}>
-        <button className='promo-close' onClick={close}>
+      <div
+        className='promo-modal'
+        ref={containerRef}
+        role='dialog'
+        aria-modal='true'
+        aria-label={`신보 안내: ${latest.albumName}`}
+        onClick={e => e.stopPropagation()}
+      >
+        <button className='promo-close' aria-label='닫기' onClick={close}>
           ✖
         </button>
         <span className='promo-label'>NEW ALBUM</span>

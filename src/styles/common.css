@@ -922,6 +922,24 @@
   border-radius: 12px;
   margin-bottom: 30px;
 }
+
+/* ===== 임베드 로딩 스켈레톤 ===== */
+@keyframes skeletonPulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+.embed-skeleton {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  animation: skeletonPulse 1.4s ease-in-out infinite;
+}
 .album-modal-bg .album-modal .album-modal-content .streaming-links {
   flex-wrap: wrap;
   gap: 8px;

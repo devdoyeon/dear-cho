@@ -1,4 +1,6 @@
-import { useEffect } from "react";
+import { useState } from "react";
+import EmbedSkeleton from "components/EmbedSkeleton";
+import { useModalBehavior } from "js/useModalBehavior";
 
 // 스트리밍 플랫폼별 링크. Spotify는 정확한 앨범 URL(album.spotify), 나머지는 앨범명 검색 링크로 폴백.
 const STREAMING = [
@@ -9,16 +11,9 @@ const STREAMING = [
 ];
 
 const AlbumModal = ({ album, modalToggle, setModalToggle }) => {
-  useEffect(() => {
-    if (modalToggle) document.body.style.overflow = "hidden";
-    return () => (document.body.style.overflow = "auto");
-  }, [modalToggle]);
-
-  useEffect(() => {
-    const onKey = e => e.key === "Escape" && setModalToggle(false);
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [setModalToggle]);
+  const [embedLoaded, setEmbedLoaded] = useState(false);
+  const close = () => setModalToggle(false);
+  const containerRef = useModalBehavior(modalToggle, close);
 
   const searchQuery = encodeURIComponent(`${album?.albumName ?? ""} LUCY`);
   const tracks = album?.tracks ?? [];
@@ -82,8 +77,14 @@ const AlbumModal = ({ album, modalToggle, setModalToggle }) => {
   };
 
   return (
-    <div className="album-modal-bg" onClick={() => setModalToggle(false)}>
-      <div className="album-modal">
+    <div className="album-modal-bg" onClick={close}>
+      <div
+        className="album-modal"
+        ref={containerRef}
+        role="dialog"
+        aria-modal="true"
+        aria-label={album?.albumName}
+      >
         <img
           src={album?.cover}
           alt="앨범 커버"
@@ -94,7 +95,7 @@ const AlbumModal = ({ album, modalToggle, setModalToggle }) => {
           className="album-modal-content"
           onClick={e => e.stopPropagation()}
         >
-          <button className="closeBtn" onClick={() => setModalToggle(false)}>
+          <button className="closeBtn" aria-label="닫기" onClick={close}>
             ✖
           </button>
           <h4 className="album-type">{album?.albumType}</h4>
@@ -104,13 +105,18 @@ const AlbumModal = ({ album, modalToggle, setModalToggle }) => {
           </span>
           {renderStreamingLinks()}
           {album?.spotifyId && (
-            <iframe
-              className="spotify-embed"
-              src={`https://open.spotify.com/embed/album/${album.spotifyId}?theme=0`}
-              title="Spotify player"
-              loading="lazy"
-              allow="encrypted-media"
-            ></iframe>
+            <>
+              {!embedLoaded && <EmbedSkeleton className="spotify-embed" />}
+              <iframe
+                className="spotify-embed"
+                style={{ display: embedLoaded ? "block" : "none" }}
+                src={`https://open.spotify.com/embed/album/${album.spotifyId}?theme=0`}
+                title="Spotify player"
+                loading="lazy"
+                allow="encrypted-media"
+                onLoad={() => setEmbedLoaded(true)}
+              ></iframe>
+            </>
           )}
           <div className="column song-list">{renderSongList()}</div>
         </div>

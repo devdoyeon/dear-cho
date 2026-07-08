@@ -36,6 +36,25 @@ const SectionNav = () => {
   const goTo = id =>
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
 
+  useEffect(() => {
+    const onKeyDown = e => {
+      if (e.key !== 'ArrowUp' && e.key !== 'ArrowDown') return
+      const tag = document.activeElement?.tagName
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'IFRAME') return
+      if (document.querySelector('.album-modal-bg, .promo-modal-bg')) return
+
+      e.preventDefault()
+      const idx = SECTIONS.findIndex(({ id }) => id === active)
+      const nextIdx =
+        e.key === 'ArrowDown'
+          ? Math.min(idx + 1, SECTIONS.length - 1)
+          : Math.max(idx - 1, 0)
+      goTo(SECTIONS[nextIdx].id)
+    }
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [active])
+
   return (
     <nav className='section-nav'>
       {SECTIONS.map(({ id, label }) => (
