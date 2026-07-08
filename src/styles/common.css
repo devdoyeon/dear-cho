@@ -448,6 +448,9 @@
   }
 }
 @media screen and (max-width: 820px) {
+  .container.stats-page .stats-grid .stat-item .stat-num {
+    font-size: 50px;
+  }
   .container.sns-page .list-wrap .list .card img {
     width: 60px;
     height: 60px;
@@ -688,38 +691,6 @@
 }
 .promo-modal .promo-listen:hover {
   background-color: #1ed760;
-}
-
-/* ===== YouTube 최신 영상 임베드 ===== */
-.container.youtubePage {
-  justify-content: flex-start;
-  padding-top: 190px;
-}
-.container.youtubePage .youtube-featured {
-  position: relative;
-  z-index: 1;
-  width: 440px;
-  max-width: 68%;
-  aspect-ratio: 16 / 9;
-  margin-bottom: 24px;
-}
-.container.youtubePage .youtube-featured iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  border-radius: 10px;
-}
-.container.youtubePage .list-wrap.youtube-wrap {
-  position: relative;
-  bottom: auto;
-}
-@media screen and (max-width: 480px) {
-  .container.youtubePage {
-    padding-top: 120px;
-  }
-  .container.youtubePage .youtube-featured {
-    width: 300px;
-  }
 }
 
 /* ===== 디스코그래피 발매 타임라인 ===== */
@@ -975,10 +946,10 @@
 
 @media screen and (max-width: 480px) {
   .container.stats-page .stats-grid {
-    gap: 24px 40px;
+    gap: 18px 26px;
   }
   .container.stats-page .stats-grid .stat-item .stat-num {
-    font-size: 44px;
+    font-size: 30px;
   }
   .container.stats-page .stats-grid .stat-item .stat-label {
     font-size: 12px;
@@ -1012,5 +983,3 @@
     padding: 5px 10px;
   }
 }
-
-/*# sourceMappingURL=common.css.map */

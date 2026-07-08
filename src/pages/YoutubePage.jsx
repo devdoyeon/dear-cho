@@ -38,16 +38,6 @@ const YoutubePage = () => {
     }
   };
 
-  // 게시일 기준 가장 최신 영상 하나를 상단에 임베드로 강조
-  const featured = youtubeArr.length
-    ? [...youtubeArr]
-        .filter(v => v?.id?.videoId)
-        .sort(
-          (a, b) =>
-            new Date(b.snippet?.publishedAt) - new Date(a.snippet?.publishedAt)
-        )[0]
-    : null;
-
   const renderCoverList = () => {
     return youtubeArr?.map(({ id, snippet }) => (
       <div className="item" key={id?.videoId}>
@@ -84,17 +74,6 @@ const YoutubePage = () => {
           YOUTUBE
         </h2>
         <img src={coverBg} alt="커버 배경이미지" className="pageImg" />
-        {featured && (
-          <div className="youtube-featured">
-            <iframe
-              src={`https://www.youtube.com/embed/${featured.id.videoId}`}
-              title="latest video"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-        )}
         <ListWrap
           ref={wrapRef}
           renderListFn={renderCoverList}

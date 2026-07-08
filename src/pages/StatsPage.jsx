@@ -3,6 +3,7 @@
 import albumCredit from 'data/albumCredit.json'
 import albumData from 'data/albumData.json'
 import ostData from 'data/ostData.json'
+import discographyBg from 'images/discographyBg.jpg'
 import participatedSongInfo from 'data/participatedSongInfo.json'
 import { buildAlbumList } from 'js/albumUtils'
 import { useScrollReveal } from 'js/useScrollReveal'
@@ -48,6 +49,7 @@ const StatsPage = () => {
       <h2 ref={titleRef} className='title stats-title even'>
         DISCOGRAPHY
       </h2>
+      <img src={discographyBg} alt='Discography Page Image' className='pageImg' />
       <div ref={gridRef} className='row stats-grid'>
         {stats.map(({ num, label }) => (
           <div className='stat-item' key={label}>

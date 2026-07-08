@@ -4,7 +4,7 @@ import { useState } from 'react'
 import ListWrap from 'components/ListWrap'
 import OstModal from 'components/OstModal'
 import ostData from 'data/ostData.json'
-import ostBg from 'images/albumBg.jpg'
+import ostBg from 'images/ostBg.jpg'
 import { useScrollReveal } from 'js/useScrollReveal'
 
 const OstPage = () => {
