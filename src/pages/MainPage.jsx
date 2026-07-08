@@ -5,7 +5,7 @@ import sign from "images/sign.png";
 
 const MainPage = () => {
   return (
-    <div className="container main img">
+    <div className="container main img" id="main">
       <img src={main} alt="메인이미지" className="mainImg pageImg" />
       <img src={mainLogo} alt="메인 로고" className="mainLogo" />
       <img src={sign} alt="싸인" className="sign" />

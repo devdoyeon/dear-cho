@@ -1,18 +1,13 @@
-import { useEffect } from 'react'
-import $ from 'jquery'
 import ListWrap from 'components/ListWrap'
 import soundCloudBg from 'images/soundcloudBg.jpg'
 import soundCloudInfo from 'data/soundCloudInfo.json'
 import { useLanguage } from 'context/LanguageContext'
+import { useScrollReveal } from 'js/useScrollReveal'
 
-const SoundCloudPage = ({ scrollY }) => {
+const SoundCloudPage = () => {
   const { t } = useLanguage()
-  useEffect(() => {
-    if (scrollY > $('.sc-title').offset().top - (window.innerHeight - 200))
-      $('.sc-title').addClass('animate')
-    if (scrollY > $('.sc-wrap').offset().top - (window.innerHeight - 200))
-      $('.sc-wrap').addClass('animate')
-  }, [scrollY])
+  const titleRef = useScrollReveal()
+  const wrapRef = useScrollReveal()
 
   const renderSCWidget = () => {
     return soundCloudInfo?.information.map(({ code, color }) => (
@@ -29,10 +24,12 @@ const SoundCloudPage = ({ scrollY }) => {
   }
 
   return (
-    <div className='container sc-page'>
-      <h2 className='title sc-title even'>SOUNDCLOUD</h2>
+    <div className='container sc-page' id='soundcloud'>
+      <h2 ref={titleRef} className='title sc-title even'>
+        SOUNDCLOUD
+      </h2>
       <img src={soundCloudBg} alt='SoundCloud Page Image' className='pageImg' />
-      <ListWrap renderListFn={renderSCWidget} className='sc-wrap' />
+      <ListWrap ref={wrapRef} renderListFn={renderSCWidget} className='sc-wrap' />
       <p>{t.scGuide}</p>
     </div>
   )

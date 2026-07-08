@@ -8,14 +8,28 @@ const OstModal = ({ ost, modalToggle, setModalToggle }) => {
     return () => (document.body.style.overflow = 'auto')
   }, [modalToggle])
 
+  useEffect(() => {
+    const onKey = e => e.key === 'Escape' && setModalToggle(false)
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [setModalToggle])
+
   // spotify URL(open.spotify.com/album/{id})에서 임베드용 id 추출
   const albumId = ost?.spotify?.split('/album/')[1]?.split('?')[0]
 
   return (
     <div className='album-modal-bg' onClick={() => setModalToggle(false)}>
-      <div className='album-modal' onClick={e => e.stopPropagation()}>
-        <img src={ost?.cover} alt='OST 커버' className='album-modal-cover' />
-        <div className='album-modal-content ost column'>
+      <div className='album-modal'>
+        <img
+          src={ost?.cover}
+          alt='OST 커버'
+          className='album-modal-cover'
+          onClick={e => e.stopPropagation()}
+        />
+        <div
+          className='album-modal-content ost column'
+          onClick={e => e.stopPropagation()}
+        >
           <button className='closeBtn' onClick={() => setModalToggle(false)}>
             ✖
           </button>

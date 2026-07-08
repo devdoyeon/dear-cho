@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-import $ from 'jquery';
 import ListWrap from '../components/ListWrap';
 import snsInfo from 'data/snsInfo.json';
 import SnsImg from 'images/SnsBg.png';
@@ -8,16 +6,13 @@ import twitter from 'images/snsIcon/twitter.svg';
 import facebook from 'images/snsIcon/facebook.svg';
 import youtube from 'images/snsIcon/youtube.svg';
 import soundcloud from 'images/snsIcon/soundcloud.svg';
+import { useScrollReveal } from 'js/useScrollReveal';
 
 const SNS_ICON = { instagram, twitter, facebook, youtube, soundcloud };
 
-const SnsPage = ({ scrollY }) => {
-  useEffect(() => {
-    if (scrollY > $('.sns-title').offset().top - (window.innerHeight - 200))
-      $('.sns-title').addClass('animate');
-    if (scrollY > $('.card-wrap').offset().top - (window.innerHeight - 200))
-      $('.card-wrap').addClass('animate');
-  }, [scrollY]);
+const SnsPage = () => {
+  const titleRef = useScrollReveal();
+  const wrapRef = useScrollReveal();
 
   const renderSNSInfo = () => {
     return snsInfo?.information.map(({ type, name, link }, idx) => (
@@ -38,10 +33,12 @@ const SnsPage = ({ scrollY }) => {
   };
 
   return (
-    <div className='container sns-page'>
-      <h2 className='title sns-title odd'>SNS & MEDIA</h2>
+    <div className='container sns-page' id='sns'>
+      <h2 ref={titleRef} className='title sns-title odd'>
+        SNS & MEDIA
+      </h2>
       <img src={SnsImg} alt='SNS Page Image' className='pageImg' />
-      <ListWrap renderListFn={renderSNSInfo} className='card-wrap' />
+      <ListWrap ref={wrapRef} renderListFn={renderSNSInfo} className='card-wrap' />
     </div>
   );
 };

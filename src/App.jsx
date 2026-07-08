@@ -12,47 +12,35 @@ import SnsPage from './pages/SnsPage'
 import Footer from './components/Footer'
 import LanguageToggle from './components/LanguageToggle'
 import NewAlbumModal from './components/NewAlbumModal'
+import SectionNav from './components/SectionNav'
 import { LanguageProvider } from './context/LanguageContext'
 import './App.css'
 
 function App() {
   const [toggle, setToggle] = useState(false)
-  const [scrollY, setScrollY] = useState(0)
-
-  const scrollYFn = async () => {
-    const scrollYHandler = () =>
-      setScrollY(window.scrollY || window.pageYOffset)
-    const watch = () => window.addEventListener('scroll', scrollYHandler)
-    watch()
-    return () => window.removeEventListener('scroll', scrollYHandler)
-  }
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY >= 300) setToggle(true)
-      else setToggle(false)
-    })
+    const onScroll = () => setToggle(window.scrollY >= 300)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
   }, [])
-
-  useEffect(() => {
-    scrollYFn()
-  }, [scrollY])
 
   return (
     <LanguageProvider>
       <div className='App'>
         <NewAlbumModal />
         <LanguageToggle />
+        <SectionNav />
         <Navigator toggle={toggle} />
         <MainPage />
-        <IntroducePage scrollY={scrollY} />
-        <StatsPage scrollY={scrollY} />
-        <AlbumPage scrollY={scrollY} />
-        <ParticipationPage scrollY={scrollY} />
-        <OstPage scrollY={scrollY} />
-        <YoutubePage scrollY={scrollY} />
-        <SoundCloudPage scrollY={scrollY} />
-        <SnsPage scrollY={scrollY} />
+        <IntroducePage />
+        <StatsPage />
+        <AlbumPage />
+        <ParticipationPage />
+        <OstPage />
+        <YoutubePage />
+        <SoundCloudPage />
+        <SnsPage />
         <Footer />
       </div>
     </LanguageProvider>

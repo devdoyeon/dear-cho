@@ -1,22 +1,17 @@
-// LUCY가 참여한 OST 목록(Spotify 자동 수집)을 보여주는 페이지. 커버 클릭 시 Spotify로 이동
+// LUCY가 참여한 OST 목록(Spotify 자동 수집)을 보여주는 페이지. 커버 클릭 시 모달로 상세 표시
 
-import { useState, useEffect } from 'react'
-import $ from 'jquery'
+import { useState } from 'react'
 import ListWrap from 'components/ListWrap'
 import OstModal from 'components/OstModal'
 import ostData from 'data/ostData.json'
 import ostBg from 'images/albumBg.jpg'
+import { useScrollReveal } from 'js/useScrollReveal'
 
-const OstPage = ({ scrollY }) => {
+const OstPage = () => {
   const [modalToggle, setModalToggle] = useState(false)
   const [selected, setSelected] = useState(null)
-
-  useEffect(() => {
-    if (scrollY > $('.ost-title').offset().top - (window.innerHeight - 200))
-      $('.ost-title').addClass('animate')
-    if (scrollY > $('.ost-wrap').offset().top - (window.innerHeight - 200))
-      $('.ost-wrap').addClass('animate')
-  }, [scrollY])
+  const titleRef = useScrollReveal()
+  const wrapRef = useScrollReveal()
 
   const renderOstList = () => {
     return ostData.map((ost, idx) => (
@@ -35,17 +30,22 @@ const OstPage = ({ scrollY }) => {
           loading='lazy'
           decoding='async'
         />
-        <p className='ost-name'>{ost.name}</p>
       </div>
     ))
   }
 
   return (
     <>
-      <div className='container ost-page'>
-        <h2 className='title ost-title even'>OST</h2>
+      <div className='container ost-page' id='ost'>
+        <h2 ref={titleRef} className='title ost-title even'>
+          OST
+        </h2>
         <img src={ostBg} alt='OST 배경이미지' className='pageImg' />
-        <ListWrap renderListFn={renderOstList} className='ost-wrap' />
+        <ListWrap
+          ref={wrapRef}
+          renderListFn={renderOstList}
+          className='ost-wrap'
+        />
       </div>
       {modalToggle && selected && (
         <OstModal

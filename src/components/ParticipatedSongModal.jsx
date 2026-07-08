@@ -10,13 +10,27 @@ const ParticipatedSongModal = ({ imgInfo, modalToggle, setModalToggle }) => {
     return () => (document.body.style.overflow = 'auto')
   }, [modalToggle])
 
+  useEffect(() => {
+    const onKey = e => e.key === 'Escape' && setModalToggle(false)
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [setModalToggle])
+
   const songDetail = participatedSongInfo.information[imgInfo?.idx]
 
   return (
     <div className='album-modal-bg' onClick={() => setModalToggle(false)}>
-      <div className='album-modal' onClick={e => e.stopPropagation()}>
-        <img src={imgInfo?.img} alt='앨범 커버' className='album-modal-cover' />
-        <div className='album-modal-content participated column'>
+      <div className='album-modal'>
+        <img
+          src={imgInfo?.img}
+          alt='앨범 커버'
+          className='album-modal-cover'
+          onClick={e => e.stopPropagation()}
+        />
+        <div
+          className='album-modal-content participated column'
+          onClick={e => e.stopPropagation()}
+        >
           <button className='closeBtn' onClick={() => setModalToggle(false)}>
             ✖
           </button>

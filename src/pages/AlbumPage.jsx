@@ -1,18 +1,20 @@
-import { useState, useEffect } from 'react'
-import $ from 'jquery'
+import { useState } from 'react'
 import AlbumModal from 'components/AlbumModal'
 import ListWrap from 'components/ListWrap'
 import albumCredit from 'data/albumCredit.json'
 import albumData from 'data/albumData.json'
 import { buildAlbumList, isNewRelease } from 'js/albumUtils'
 import { useLanguage } from 'context/LanguageContext'
+import { useScrollReveal } from 'js/useScrollReveal'
 
 import albumBg from 'images/albumBg.jpg'
 
-const AlbumPage = ({ scrollY }) => {
+const AlbumPage = () => {
   const [modalToggle, setModalToggle] = useState(false)
   const [selected, setSelected] = useState(null)
   const { lang } = useLanguage()
+  const titleRef = useScrollReveal()
+  const wrapRef = useScrollReveal()
 
   const albumList = buildAlbumList(albumCredit, albumData, lang)
 
@@ -38,19 +40,18 @@ const AlbumPage = ({ scrollY }) => {
     ))
   }
 
-  useEffect(() => {
-    if (scrollY > $('.album-title').offset().top - (window.innerHeight - 200))
-      $('.album-title').addClass('animate')
-    if (scrollY > $('.album-wrap').offset().top - (window.innerHeight - 200))
-      $('.album-wrap').addClass('animate')
-  }, [scrollY])
-
   return (
     <>
-      <div className='container album-page'>
-        <h2 className='title album-title odd'>ALBUM</h2>
+      <div className='container album-page' id='album'>
+        <h2 ref={titleRef} className='title album-title odd'>
+          ALBUM
+        </h2>
         <img src={albumBg} alt='앨범 배경이미지' className='pageImg' />
-        <ListWrap renderListFn={renderAlbumList} className='album-wrap' />
+        <ListWrap
+          ref={wrapRef}
+          renderListFn={renderAlbumList}
+          className='album-wrap'
+        />
       </div>
       {modalToggle && selected && (
         <AlbumModal

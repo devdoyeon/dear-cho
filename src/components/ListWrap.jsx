@@ -1,10 +1,10 @@
-import { useRef } from "react";
+import { useRef, forwardRef } from "react";
 
-const ListWrap = ({ renderListFn, className }) => {
+const ListWrap = forwardRef(({ renderListFn, className }, ref) => {
   const listRef = useRef(null);
 
   return (
-    <div className={`list-wrap ${className}`}>
+    <div ref={ref} className={`list-wrap ${className}`}>
       <span className="click-guide">CLICK ME!</span>
       <div className="row list" ref={listRef}>
         {renderListFn()}
@@ -35,6 +35,6 @@ const ListWrap = ({ renderListFn, className }) => {
       </div>
     </div>
   );
-};
+});
 
 export default ListWrap;

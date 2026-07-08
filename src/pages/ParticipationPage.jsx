@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import participationBg from 'images/participationBg.jpg'
-import $ from 'jquery'
 import ParticipatedSongModal from 'components/ParticipatedSongModal'
 import ListWrap from 'components/ListWrap'
+import { useScrollReveal } from 'js/useScrollReveal'
 
 import partSong0 from 'images/participatedAlbumCover/0.jpg'
 import partSong1 from 'images/participatedAlbumCover/1.jpg'
@@ -22,9 +22,11 @@ import partSong14 from 'images/participatedAlbumCover/14.jpg'
 import partSong15 from 'images/participatedAlbumCover/15.jpg'
 import partSong16 from 'images/participatedAlbumCover/16.jpg'
 
-const ParticipationPage = ({ scrollY }) => {
+const ParticipationPage = () => {
   const [modalToggle, setModalToggle] = useState(false)
   const [imgInfo, setImgInfo] = useState({ img: '', idx: '' })
+  const titleRef = useScrollReveal()
+  const wrapRef = useScrollReveal()
 
   const partSongArr = [
     partSong0,
@@ -43,49 +45,43 @@ const ParticipationPage = ({ scrollY }) => {
     partSong13,
     partSong14,
     partSong15,
-    partSong16
+    partSong16,
   ]
 
   const renderParticipatedAlbumList = () => {
     return partSongArr.map((albumCover, idx) => (
-      <img
+      <div
         key={idx}
-        src={albumCover}
-        alt={`participated-${idx}`}
-        className='item album-cover'
-        loading='lazy'
-        decoding='async'
+        className='item participated-item'
         onClick={() => {
           setImgInfo({ img: albumCover, idx })
           setModalToggle(true)
         }}
-      />
+      >
+        <img
+          src={albumCover}
+          alt={`participated-${idx}`}
+          className='album-cover'
+          loading='lazy'
+          decoding='async'
+        />
+      </div>
     ))
   }
 
-  useEffect(() => {
-    if (
-      scrollY >
-      $('.participation-title').offset().top - (window.innerHeight - 200)
-    )
-      $('.participation-title').addClass('animate')
-    if (
-      scrollY >
-      $('.participated-song-wrap').offset().top - (window.innerHeight - 200)
-    )
-      $('.participated-song-wrap').addClass('animate')
-  }, [scrollY])
-
   return (
     <>
-      <div className='container participation-page'>
-        <h2 className='title participation-title even'>PARTICIPATED SONG</h2>
+      <div className='container participation-page' id='participated'>
+        <h2 ref={titleRef} className='title participation-title even'>
+          PARTICIPATED SONG
+        </h2>
         <img
           src={participationBg}
           alt='참여 음반 배경이미지'
           className='pageImg'
         />
         <ListWrap
+          ref={wrapRef}
           renderListFn={renderParticipatedAlbumList}
           className='participated-song-wrap'
         />

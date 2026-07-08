@@ -1,21 +1,16 @@
 import { useState, useEffect, useRef } from "react";
-import $ from "jquery";
 import { getYoutubeList } from "js/api";
 import coverBg from "images/coverBg.jpg";
 import ListWrap from "components/ListWrap";
+import { useScrollReveal } from "js/useScrollReveal";
 
 const CACHE_KEY = "youtubeList";
 
-const YoutubePage = ({ scrollY }) => {
+const YoutubePage = () => {
   const [youtubeArr, setYoutubeArr] = useState([]);
   const loadingRef = useRef(false);
-
-  useEffect(() => {
-    if (scrollY > $(".youtube-title").offset().top - (window.innerHeight - 200))
-      $(".youtube-title").addClass("animate");
-    if (scrollY > $(".youtube-wrap").offset().top - (window.innerHeight - 200))
-      $(".youtube-wrap").addClass("animate");
-  }, [scrollY]);
+  const titleRef = useScrollReveal();
+  const wrapRef = useScrollReveal();
 
   // force가 false면 세션 캐시를 우선 사용해 API 할당량 소모를 막는다.
   const getYoutube = async (force = false) => {
@@ -42,6 +37,16 @@ const YoutubePage = ({ scrollY }) => {
       loadingRef.current = false;
     }
   };
+
+  // 게시일 기준 가장 최신 영상 하나를 상단에 임베드로 강조
+  const featured = youtubeArr.length
+    ? [...youtubeArr]
+        .filter(v => v?.id?.videoId)
+        .sort(
+          (a, b) =>
+            new Date(b.snippet?.publishedAt) - new Date(a.snippet?.publishedAt)
+        )[0]
+    : null;
 
   const renderCoverList = () => {
     return youtubeArr?.map(({ id, snippet }) => (
@@ -70,15 +75,31 @@ const YoutubePage = ({ scrollY }) => {
 
   return (
     <>
-      <div className="container youtubePage">
+      <div className="container youtubePage" id="youtube">
         <h2
+          ref={titleRef}
           className="title youtube-title odd"
           onClick={() => getYoutube(true)}
         >
           YOUTUBE
         </h2>
         <img src={coverBg} alt="커버 배경이미지" className="pageImg" />
-        <ListWrap renderListFn={renderCoverList} className="youtube-wrap" />
+        {featured && (
+          <div className="youtube-featured">
+            <iframe
+              src={`https://www.youtube.com/embed/${featured.id.videoId}`}
+              title="latest video"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        )}
+        <ListWrap
+          ref={wrapRef}
+          renderListFn={renderCoverList}
+          className="youtube-wrap"
+        />
       </div>
     </>
   );

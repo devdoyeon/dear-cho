@@ -205,6 +205,8 @@
     width: 100%;
     .album-modal-cover {
       width: 40%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
       border-radius: 10px;
     }
     .album-modal-content {
@@ -362,6 +364,14 @@
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
       }
+    }
+  }
+  &.album-wrap,
+  &.ost-wrap,
+  &.participated-song-wrap {
+    .list {
+      align-items: flex-start;
+      padding-top: 8px;
     }
   }
 }
@@ -734,12 +744,14 @@
 
 .list-wrap {
   .list {
-    .album-item {
+    .album-item,
+    .participated-item {
       position: relative;
       width: 200px;
       margin-right: 50px;
       cursor: pointer;
       flex-shrink: 0;
+      transition: transform 0.3s ease;
 
       &:last-child {
         margin-right: 0;
@@ -747,25 +759,25 @@
 
       .album-cover {
         width: 100%;
+        height: 200px;
         display: block;
+        object-fit: cover;
         border-radius: 4px;
-        transition: transform 0.3s ease;
       }
 
       &:hover {
-        .album-cover {
-          transform: translateY(-6px);
-        }
+        transform: translateY(-6px);
       }
     }
 
     .ost-item {
       position: relative;
-      @include flex-style(column);
+      @include flex-style(column, center, flex-start);
       width: 200px;
       margin-right: 50px;
       flex-shrink: 0;
       cursor: pointer;
+      transition: transform 0.3s ease;
 
       &:last-child {
         margin-right: 0;
@@ -773,26 +785,14 @@
 
       .album-cover {
         width: 100%;
+        height: 200px;
         display: block;
+        object-fit: cover;
         border-radius: 4px;
-        transition: transform 0.3s ease;
       }
 
       &:hover {
-        .album-cover {
-          transform: translateY(-6px);
-        }
-      }
-
-      .ost-name {
-        margin-top: 12px;
-        font-size: 13px;
-        text-align: center;
-        word-break: keep-all;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
+        transform: translateY(-6px);
       }
     }
   }
@@ -909,14 +909,13 @@
   .list-wrap {
     .list {
       .album-item,
+      .participated-item,
       .ost-item {
         width: 150px;
         margin-right: 20px;
-      }
 
-      .ost-item {
-        .ost-name {
-          font-size: 11px;
+        .album-cover {
+          height: 150px;
         }
       }
     }

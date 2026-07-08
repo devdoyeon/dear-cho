@@ -1,23 +1,19 @@
-import { useEffect } from "react";
-import $ from "jquery";
 import introBg from "images/introBg.jpg";
 import { useLanguage } from "context/LanguageContext";
+import { useScrollReveal } from "js/useScrollReveal";
 
-const IntroducePage = ({ scrollY }) => {
+const IntroducePage = () => {
   const { t } = useLanguage();
-
-  useEffect(() => {
-    if (scrollY > $(".info-title").offset().top - (window.innerHeight - 200))
-      $(".info-title").addClass("animate");
-    if (scrollY > $(".info-box").offset().top - (window.innerHeight - 200))
-      $(".info-box").addClass("animate");
-  }, [scrollY]);
+  const titleRef = useScrollReveal();
+  const boxRef = useScrollReveal();
 
   return (
-    <div className="container introduce-page">
-      <h2 className="title info-title even">INTRODUCE</h2>
+    <div className="container introduce-page" id="introduce">
+      <h2 ref={titleRef} className="title info-title even">
+        INTRODUCE
+      </h2>
       <img src={introBg} alt="메인이미지" className="introduceBg pageImg" />
-      <div className="column info-box">
+      <div ref={boxRef} className="column info-box">
         <div className="row">
           <span>{t.introLabels.name}</span>
           <h4>{t.introValues.name}</h4>
